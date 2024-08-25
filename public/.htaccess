@@ -1,0 +1,9 @@
+#this file is used to say that only load index.php no matter what you type
+RewriteEngine On
+
+#accept loading of actual files and directories/if file or dirrectory exist load
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#send everything else to index page
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
