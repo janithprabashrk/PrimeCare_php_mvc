@@ -1,8 +1,24 @@
  <?php
  
  if($_SERVER['SERVER_NAME'] == 'localhost'){
-    define('ROOT', 'http://localhost/php_mvc_backend/public');
+   // database config local build environment
+   define('DBNAME', 'my_db');
+   define('DBHOST', 'localhost');
+   define('DBUSER', 'root');
+   define('DBPASS', '');
+   define('ROOT', 'http://localhost/php_mvc_backend/public');
  }else{
-    define('ROOT', 'http://www.yourwebsite.com');
+   // database config for online platform
+   define('DBNAME', 'my_db');
+   define('DBHOST', 'localhost');
+   define('DBUSER', 'root');
+   define('DBPASS', '');
+   define('ROOT', 'http://www.yourwebsite.com');
  }
     
+ define('APP_NAME', 'PrimeCare');
+ define('APP_DESC', 'Protect . Earn . Find');
+
+//  true means show any errors
+ define('DEBUG', true);
+ 

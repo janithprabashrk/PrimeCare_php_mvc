@@ -1,6 +1,7 @@
 <?php
 
-class controller{
+trait controller{
+
     public function view($name){
         $filename = "../app/views/".$name.".view.php";
         if (file_exists($filename)) {
