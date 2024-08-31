@@ -1,5 +1,5 @@
 <?php
-
+    // use controller; <- this is for namespaces
 class Home{
     use controller;
     public function index(){
