@@ -4,10 +4,11 @@ trait Model{//similar to a class but can be inherited by other classes
 
     protected $table = 'users'; //table name which can inherit
     
-    protected $limit = 10;
-    protected $offset = 0;
-    protected $order_type = "desc";
+    protected $limit        = 10;
+    protected $offset       = 0;
+    protected $order_type   = "desc";
     protected $order_column = "id";
+    public    $errors       = [];
 
     public function findAll(){//search rows depending on the data passed
         $query = "
