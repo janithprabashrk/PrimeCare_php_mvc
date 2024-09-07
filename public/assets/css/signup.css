@@ -27,16 +27,20 @@ body {
 }
 
 .signup-form__logo {
-    width: 140px;
+    width: 200px;
     height: auto;
-    margin-bottom: 10px;
+    /* margin-bottom: 5px; */
 }
 
 .signup-form__welcome-text h3,
 .signup-form__welcome-text h2,
 .signup-form__welcome-text h4 {
-    margin: 15px 0;
+    margin: 5px 0;
     color: #333;
+}
+
+.signup-form__welcome-text h4 {
+    font-weight: 200;
 }
 
 .signup-form__label {
@@ -53,6 +57,7 @@ body {
     margin: 10px 0 10px;
     font-size: 14px;
     border: 1px solid #ccc;
+    background-color: #f5f5fa;
     border-radius: 6px;
     box-sizing: border-box;
     transition: border-color 0.3s ease;
@@ -78,6 +83,10 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 00px;
+}
+
+.signup-form__name-fields input{
+    color: #F5F5F5;
 }
 
 .signup-form__password-field {
@@ -120,9 +129,10 @@ body {
     color: #1d6fa5;
 }
 
-.social-login h3 {
-    margin: 20px 0 10px;
+.social-login h4 {
+    margin: 5px 0;
     font-size: 16px;
+    color: #333;
 }
 
 .social-login__button {
@@ -140,7 +150,7 @@ body {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .social-login__button:hover {

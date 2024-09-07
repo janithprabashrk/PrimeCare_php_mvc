@@ -13,7 +13,7 @@
         <div class="signup-form">
             <img class="signup-form__logo" src="<?= ROOT ?>/assets/images/logo.png" alt="Property Management Agency Logo">
             <div class="signup-form__welcome-text">
-                <h3>Welcome to our</h3>
+                <h4>Welcome to our</h4>
                 <h2>Property Management Agency</h2>
                 <h4>Sign up to our platform</h4>
             </div>
@@ -49,13 +49,11 @@
                         <input type="password" name="confirmPassword" id="confirmPassword" class="signup-form__input" placeholder="*********" required>
                     </div>
                 </div>
-
-                <a class="signup-form__forgot-password" href="<?= ROOT ?>/resetpw">Forgot password?</a>
                 <button type="submit" class="signup-form__submit-button">Register</button>
             </form>
 
             <div class="social-login">
-                <h3>Or continue with</h3>
+                <h4>Or continue with</h4>
                 <button type="button" class="social-login__button">
                     <img src="https://www.pngall.com/wp-content/uploads/13/Google-Logo.png" alt="Google Logo">
                     Google
