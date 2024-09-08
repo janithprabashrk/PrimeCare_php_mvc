@@ -50,7 +50,6 @@
                     </div>
                 </div>
 
-                <a class="signup-form__forgot-password" href="<?= ROOT ?>/resetpw">Forgot password?</a>
                 <button type="submit" class="signup-form__submit-button">Register</button>
             </form>
 
