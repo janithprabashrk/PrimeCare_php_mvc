@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A sample webpage with a navigation bar and main content.">
-    <title>Sample Page</title>
+    <title>PrimeCare</title>
     <link rel="stylesheet" href="<?= ROOT ?>/assets/css/home.css"> <!-- Link to your CSS file -->
 </head>
 

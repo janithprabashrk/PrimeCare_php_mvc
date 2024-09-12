@@ -16,7 +16,9 @@
             </div>
             <div class="user_view-sidemenu-content">
                 <!-- import the side bar menu items -->
-                <?php require_once 'owner/owner.sidebar.php'; ?>
+                <?php require_once 'customer/customer.sidebar.php'; ?>
+
+                <button class="secondary-btn">Logout</button>
             </div>
         </div>
         <div class="user_view-content_section">
@@ -26,9 +28,8 @@
             </div>
             <div class="user_view-content-area">
                 <!-- This is Just for make components -->
-                 <div class="listing">
-                    
-                 </div>
+                <!-- <div class="listing"></div> -->
+                <?php require_once 'profile.view.php'; ?>
             </div>
         </div>
     </div>
