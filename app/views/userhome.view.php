@@ -23,9 +23,6 @@
         </div>
         <div class="user_view-content_section">
             <div class="user_view-profile-section"></div>
-            <div class="user_view-menu-bar">
-                <p>Profile</p>
-            </div>
             <div class="user_view-content-area">
                 <!-- This is Just for make components -->
                 <!-- <div class="listing"></div> -->
