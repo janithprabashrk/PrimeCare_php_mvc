@@ -15,13 +15,8 @@
                 <img src="<?= ROOT ?>/assets/images/logo.png" alt="PrimeCare">
             </div>
             <div class="user_view-sidemenu-content">
-                <ul>
-                    <li><button class="btn">Dashboard</button></li>
-                    <li><button class="btn">Profile</button></li=>
-                    <li><button class="btn">Properties</button></li>
-                    <li><button class="btn">Maintenance</button></liass=>
-                    <li><button class="btn">Tenants</button></li>
-                </ul>
+                <!-- import the side bar menu items -->
+                <?php require_once 'owner/owner.sidebar.php'; ?>
             </div>
         </div>
         <div class="user_view-content_section">
