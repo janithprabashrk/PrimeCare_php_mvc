@@ -7,8 +7,8 @@
             <div>
                 <h3>Oceanview Retreat 2</h3>
                 <div class="property-info">
-                    <span><img src="<?= ROOT ?>/assets/images/building-plan.png" class="property-info-img"/> 4 Unit</span>
-                    <span><img src="<?= ROOT ?>/assets/images/double-bed.png" class="property-info-img"/> 20 Rooms</span>
+                    <span><img src="<?= ROOT ?>/assets/images/building-plan.png" class="property-info-img" /> 4 Unit</span>
+                    <span><img src="<?= ROOT ?>/assets/images/double-bed.png" class="property-info-img" /> 20 Rooms</span>
                 </div>
             </div>
             <div>
@@ -18,7 +18,7 @@
             </div>
         </div>
         <div>
-            <p class="property-description"><img src="<?= ROOT ?>/assets/images/location.png" class="property-info-img"/> No 365, lane name, lane name 2, city name</p>
+            <p class="property-description"><img src="<?= ROOT ?>/assets/images/location.png" class="property-info-img" /> No 365, lane name, lane name 2, city name</p>
         </div>
         <div>
             <p class="property-description">
@@ -28,8 +28,8 @@
         <div class="property-actions">
             <a href="#" class="change-status">change Pending</a>
             <div>
-                <a href="#" class="delete-btn"><img src="<?= ROOT ?>/assets/images/edit.png" class="property-info-img"/></a>
-                <a href="#" class="edit-btn"><img src="<?= ROOT ?>/assets/images/delete.png" class="property-info-img"/></a>
+                <a href="#" class="delete-btn"><img src="<?= ROOT ?>/assets/images/edit.png" class="property-info-img" /></a>
+                <a href="#" class="edit-btn"><img src="<?= ROOT ?>/assets/images/delete.png" class="property-info-img" /></a>
             </div>
         </div>
     </div>

@@ -8,78 +8,82 @@ body{
 
 .user_view-container{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    /* align-items: center;
     justify-content: center;
+    width: 100%; */
     height: 100vh;
     background-color: var(--background-color);
     font-family: 'Poppins', Arial, sans-serif;
+}
+
+.header-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: 1;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--white-color);
+    box-shadow: var(--box-shadow);
+}
+
+.content-section{
+    display: flex;
+    flex: 1;
+    padding-top: 60px;
+    background-color: val(--background-color);
+}
+
+.header-logo-png{
+    width: 180px;
+    height: 100%;
+}
+
+.header-profile-picture{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 30px;
 }
 
 .user_view-sidemenu{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 15%;
-    height: 100%;
-    background-color: var(--white-color);
-    align-items: center;
-}
-
-.user_view-sidemenu-logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10%;
-}
-
-.user_view-sidemenu-logo img{
-    width: 180px;
-    height: 100%;
-}
-
-.user_view-sidemenu-content{
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 85%;
-    width: 100%;
-    padding: 10px;
+    border-radius: 5px;
+    top: 60px;
+    width: 250px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: var(--white-color);
+    box-shadow: var(--box-shadow);
+    padding: 15px 0;
 }
 
-.user_view-sidemenu-content ul{
+.user_view-sidemenu button{
+    width: 100%;
+}
+
+.user_view-sidemenu ul{
     list-style-type: none;
     padding: 0;
     width: 100%;
 }
 
-.user_view-sidemenu-content ul li{
+.user_view-sidemenu ul li{
     cursor: pointer;
     padding: 5px 0;
     text-align: center;
-}
-
-.user_view-content_section{
-    display: flex;
-    flex-direction: column;
-    width: 85%;
-    height: 100%;
-}
-
-.user_view-profile-section{
-    width: 100%;
-    height: 10%;
-    background-color: var(--white-color);
-    display: flex;
-    justify-content: flex-end;
-}
-
-.user_view-profile-section img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin: 10px;
 }
 
 .user_view-menu-bar{
@@ -96,30 +100,63 @@ body{
 }
 
 .user_view-menu-bar h2{
+    margin-left: 10px;
     text-transform: uppercase;
     font-weight: 500;
 }
 
-.user_view-content-area{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    margin: 2px;
-}
-
-.sidebar_menu-button{
-    border-radius: 5px;
-    background-color: var(--primary-color);
-} 
-
-.sidebar-menu-button span{
-    margin-left: 10px;
+.user_view-content_section{
+    flex: 1;
+    margin-left: 250px;
+    padding: 15px 0;
+    overflow-y: auto;
+    height: calc(100vh - 60px);
 }
 
 .navigate-icons{
     height: 40px;
     width: 40px;
     cursor: pointer;
+}
+
+.toggle-sidebar-btn {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .user_view-sidemenu {
+        display: none; /* Hide sidebar on small screens */
+    }
+
+    .user_view-content_section {
+        margin-left: 0; /* Full-width content section */
+    }
+
+    /* Optional: Add a button to toggle the sidebar on mobile */
+    .toggle-sidebar-btn {
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: 10px;
+        z-index: 2;
+        padding: 10px;
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 }
 
 
