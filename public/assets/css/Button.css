@@ -1,7 +1,9 @@
 @import url('./variables.css');
 
 .primary-btn{
-    width: 100%;
+    /* width: 100%; */
+    max-width: 200px;
+    min-width: 100px;
     padding: 10px 25px;
     background-color: var(--primary-color);
     color: #fff;
@@ -19,9 +21,11 @@
 }
 
 .secondary-btn{
-    width: 100%;
+    /* width: 100%; */
+    max-width: 200px;
+    min-width: 100px;
     padding: 10px 25px; 
-    background-color: #FFFFFF;
+    background-color: var(--white-color);
     color: var(--primary-color); 
     font-size: 16px;
     font-weight: 600;
@@ -33,7 +37,7 @@
 }
 
 .secondary-btn:hover {
-    color: #FFFFFF; 
+    color: var(--white-color); 
     background-color: var(--primary-color); 
 }
 
@@ -45,10 +49,30 @@
     font-size: 16px; 
     cursor: pointer;
     text-align: center; 
-    width: 100%;
+    /* width: 100%; */
+    max-width: 200px;
+    min-width: 100px;
 }
 
 .btn:hover {
     background-color: var(--primary-color); 
     color: var(--white-color);
+}
+
+.small-btn{
+    padding: 5px 10px !important; 
+    font-size: 14px; 
+    cursor: pointer;
+    text-align: center; 
+}
+
+.border-button{
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    background-color: rgba(var(--green-color-rgb), 0.20);
+    color: var(--green-color);
+    border: 1px solid var(--green-color);
+    max-width: 100px;
+    min-width: 80px;
 }

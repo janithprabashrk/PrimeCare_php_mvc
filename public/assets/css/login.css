@@ -1,3 +1,5 @@
+@import url('./variables.css');
+
 body {
     margin: 0;
     font-family: 'Poppins', Arial, sans-serif;
@@ -106,7 +108,7 @@ body {
     margin-bottom: 5px;
 }
 
-.login-form__forgot-password {
+.login-form-link-forgot-password {
     display: block;
     font-weight: bold;
     text-decoration: none;
@@ -114,6 +116,10 @@ body {
     margin-top: 5px;
     font-size: 14px;
     text-align: right;
+}
+
+.login-form-link-forgot-password:hover {
+    color: var(--link-color-hover);
 }
 
 .login-form__new-member h5 {
@@ -124,8 +130,9 @@ body {
 
 .login-form__register-link {
     font-weight: bold;
-    color: var(--link-color);
     text-decoration: none;
+    color: var(--link-color);
+    font-size: 14px;
     margin-left: 5px;
 }
 
