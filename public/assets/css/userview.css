@@ -1,5 +1,6 @@
 @import url('./Button.css');
 @import url('./variables.css');
+@import url('./components.css');
 
 body{
     background-color: var(--background-color);

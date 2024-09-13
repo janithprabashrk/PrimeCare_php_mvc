@@ -10,6 +10,11 @@
 
     --link-color: #3498db;
     --link-color-hover: #1d6fa5;
+
+    --green-color: #2ecc71;
+    --green-color-rgb: 46, 204, 113;
+    --red-color: #e74c3c;
+    --red-color-rgb: 231, 76, 60;
     
     --background-color-home: #FFF6E6;
     --background-color: #f5f7fa;

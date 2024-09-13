@@ -65,3 +65,14 @@
     cursor: pointer;
     text-align: center; 
 }
+
+.border-button{
+    padding: 5px 10px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    background-color: rgba(var(--green-color-rgb), 0.20);
+    color: var(--green-color);
+    border: 1px solid var(--green-color);
+    max-width: 100px;
+    min-width: 80px;
+}
