@@ -6,37 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?= ROOT ?>/assets/css/userview.css">
     <link rel="stylesheet" href="<?= ROOT ?>/assets/css/owner.css">
+    <link rel="stylesheet" href="<?= ROOT ?>/assets/css/button.css">
     <title>PrimeCare</title>
 </head>
 
 <body>
     <div class="user_view-container">
-        <div class="user_view-sidemenu">
-            <div class="user_view-sidemenu-logo">
-                <img src="<?= ROOT ?>/assets/images/logo.png" alt="PrimeCare">
-            </div>
-            <div class="user_view-sidemenu-content">
+        <div class="header-line">
+            <img src="<?= ROOT ?>/assets/images/logo.png" alt="PrimeCare" class="header-logo-png">
+            <button class="toggle-sidebar-btn" onclick="toggleSidebar()">☰ Menu</button>
+            <img src="<?= ROOT ?>/assets/images/user.png" alt="Profile" class="header-profile-picture">
+        </div>
+        <div class="content-section">
+            <div class="user_view-sidemenu">
                 <!-- import the side bar menu items -->
                 <?php require_once 'owner/owner.sidebar.php'; ?>
 
                 <button class="secondary-btn">Logout</button>
             </div>
-        </div>
-        <div class="user_view-content_section">
-
-
-            <div class="user_view-profile-section">
-                <img src="<?= ROOT ?>/assets/images/user.png" alt="Profile" class="user_view-profile-pic">
-            </div>
-
-
-            <div class="user_view-content-area">
-                <!-- This is Just for make components -->
-                <!-- <div class="listing"></div> -->
-                <?php require_once 'components/propertyListingComponent.php'; ?>
+            <div class="user_view-content_section">
+                <?php require_once 'propertyListing.view.php'; ?>
             </div>
         </div>
     </div>
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById('sidebar');
+            sidebar.style.display = (sidebar.style.display === 'none' || sidebar.style.display === '') ? 'flex' : 'none';
+        }
+    </script>
 </body>
 
 </html>
