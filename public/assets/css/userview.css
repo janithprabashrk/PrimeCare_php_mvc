@@ -27,7 +27,6 @@ body{
 
 .user_view-sidemenu-logo{
     display: flex;
-    /* position: fixed; */
     align-items: center;
     justify-content: center;
     height: 10%;
@@ -71,6 +70,15 @@ body{
     width: 100%;
     height: 10%;
     background-color: var(--white-color);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.user_view-profile-section img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px;
 }
 
 .user_view-menu-bar{
@@ -185,11 +193,18 @@ body{
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     background-color: var(--white-color);
     border-radius: 10px;
     box-shadow: var(--box-shadow);
     background-clip: border-box;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-edit-form div {
+    display: flex;
+    justify-content: center;
 }
 
 .input-group{
@@ -212,5 +227,6 @@ body{
     border-radius: 50%;
     margin: 20px;
     object-fit: cover;
+    border: 1px solid var(--primary-color);
 }
 

@@ -23,11 +23,17 @@
             </div>
         </div>
         <div class="user_view-content_section">
-            <div class="user_view-profile-section"></div>
+
+
+            <div class="user_view-profile-section">
+                <img src="<?= ROOT ?>/assets/images/user.png" alt="Profile" class="user_view-profile-pic">
+            </div>
+
+
             <div class="user_view-content-area">
                 <!-- This is Just for make components -->
                 <!-- <div class="listing"></div> -->
-                <?php require_once 'owner/addProperty.view.php'; ?>
+                <?php require_once 'profile.view.php'; ?>
             </div>
         </div>
     </div>

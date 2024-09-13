@@ -1,4 +1,5 @@
-
+@import url('./Button.css');
+@import url('./variables.css');
 
 /** Manager - Add Property  */
 .owner-addProp-container {

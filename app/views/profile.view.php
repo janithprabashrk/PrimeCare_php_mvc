@@ -9,7 +9,7 @@
         <input type="file" id="profile-picture-input" class="input-file" style="display: none;" hidden>
 
         <!-- Profile picture that will act as input -->
-        <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-picture" id="profile-picture-preview">
+        <img src="<?=ROOT?>/assets/images/user.png" alt="Profile Picture" class="profile-picture" id="profile-picture-preview">
 
         <!-- User details -->
         <h2>Mr. Property Owner</h2>
@@ -37,8 +37,11 @@
                 <label for="contact-number" class="input-label">Contact number</label>
                 <input type="text" id="contact-number" class="input-field" value="+94 71 123 4567" disabled>
             </div>
-            <button type="button" class="primary-btn" id="edit-button">Edit</button>
-            <button type="submit" class="primary-btn" id="save-button" style="display: none;">Save</button>
+
+            <div>
+                <button type="button" class="primary-btn" id="edit-button">Edit</button>
+                <button type="submit" class="primary-btn" id="save-button" style="display: none;">Save</button>
+            </div>
         </form>
     </div>
 </div>
