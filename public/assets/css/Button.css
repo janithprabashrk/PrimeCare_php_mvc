@@ -3,6 +3,7 @@
 .primary-btn{
     /* width: 100%; */
     max-width: 200px;
+    min-width: 100px;
     padding: 10px 25px;
     background-color: var(--primary-color);
     color: #fff;
@@ -22,6 +23,7 @@
 .secondary-btn{
     /* width: 100%; */
     max-width: 200px;
+    min-width: 100px;
     padding: 10px 25px; 
     background-color: #FFFFFF;
     color: var(--primary-color); 
@@ -49,6 +51,7 @@
     text-align: center; 
     /* width: 100%; */
     max-width: 200px;
+    min-width: 100px;
 }
 
 .btn:hover {
