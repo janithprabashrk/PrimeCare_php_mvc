@@ -1,7 +1,8 @@
 @import url('./variables.css');
 
 .primary-btn{
-    width: 100%;
+    /* width: 100%; */
+    max-width: 200px;
     padding: 10px 25px;
     background-color: var(--primary-color);
     color: #fff;
@@ -19,7 +20,8 @@
 }
 
 .secondary-btn{
-    width: 100%;
+    /* width: 100%; */
+    max-width: 200px;
     padding: 10px 25px; 
     background-color: #FFFFFF;
     color: var(--primary-color); 
@@ -45,10 +47,18 @@
     font-size: 16px; 
     cursor: pointer;
     text-align: center; 
-    width: 100%;
+    /* width: 100%; */
+    max-width: 200px;
 }
 
 .btn:hover {
     background-color: var(--primary-color); 
     color: var(--white-color);
+}
+
+.small-btn{
+    padding: 5px 10px !important; 
+    font-size: 14px; 
+    cursor: pointer;
+    text-align: center; 
 }

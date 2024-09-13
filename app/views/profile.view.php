@@ -1,5 +1,5 @@
 <div class="user_view-menu-bar">
-    <p>Profile</p>
+    <h2>PROFILE</h2>
 </div>
 
 <div class="profile-container">

@@ -26,7 +26,7 @@
             <div class="user_view-content-area">
                 <!-- This is Just for make components -->
                 <!-- <div class="listing"></div> -->
-                <?php require_once 'profile.view.php'; ?>
+                <?php require_once 'owner/addProperty.view.php'; ?>
             </div>
         </div>
     </div>
