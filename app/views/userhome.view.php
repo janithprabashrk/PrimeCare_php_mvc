@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?= ROOT ?>/assets/css/userview.css">
+    <link rel="stylesheet" href="<?= ROOT ?>/assets/css/owner.css">
     <title>PrimeCare</title>
 </head>
 
@@ -16,7 +17,7 @@
             </div>
             <div class="user_view-sidemenu-content">
                 <!-- import the side bar menu items -->
-                <?php require_once 'customer/customer.sidebar.php'; ?>
+                <?php require_once 'owner/owner.sidebar.php'; ?>
 
                 <button class="secondary-btn">Logout</button>
             </div>

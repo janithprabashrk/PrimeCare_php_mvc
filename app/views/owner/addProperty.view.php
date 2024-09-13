@@ -15,6 +15,17 @@
             <label class="input-label">Description*</label>
             <textarea name="description" placeholder="Write About Property" class="input-field" required></textarea>
 
+            <div class="input-group">
+                <div class="input-group-group">
+                    <label class="input-label">Year Built*</label>
+                    <input type="text" name="year" placeholder="Enter Property Year Built" class="input-field" required>
+                </div>
+                <div class="input-group-group">
+                    <label class="input-label">Monthly Rent In LKR*</label>
+                    <input type="text" name="rent" placeholder="Enter Rent" class="input-field" required>
+                </div>
+            </div>
+
             <label class="input-label">Upload Property Image*</label>
             <div class="owner-addProp-file-upload">
                 <input type="file" name="property_image[]" id="property_image" class="input-field" multiple required>
@@ -70,16 +81,7 @@
                 </div>
             </div>
 
-            <div class="input-group">
-                <div class="input-group-group">
-                    <label class="input-label">Year Built*</label>
-                    <input type="text" name="year" placeholder="Enter Property Year Built" class="input-field" required>
-                </div>
-                <div class="input-group-group">
-                    <label class="input-label">Monthly Rent In LKR*</label>
-                    <input type="text" name="rent" placeholder="Enter Rent" class="input-field" required>
-                </div>
-            </div>
+            
 
             <div class="input-group-group">
                 <label class="input-label">Floor Plan</label>
