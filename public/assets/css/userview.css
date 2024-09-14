@@ -30,6 +30,10 @@ body{
     box-shadow: var(--box-shadow);
 }
 
+.header-line a img{
+    cursor: pointer;
+}
+
 .content-section{
     display: flex;
     flex: 1;
@@ -89,17 +93,49 @@ body{
     justify-content: flex-start;
     align-content: center;
     align-items: center;
-    margin: 5px 0px;
-    padding: 5px 20px;
+    margin: 5px;
+    padding: 5px;
     border-radius: 5px;
     height: 10%;
     background-color: var(--white-color);
 }
 
 .user_view-menu-bar h2{
-    margin-left: 10px;
+    margin: 3px 10px;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 530;
+    font-size: 1.5rem;
+}
+
+.user_view-menu-bar p{
+    margin: 3px;
+    padding-left: 5px;
+    font-size: 0.9rem;
+}
+
+.multi-line-munu-bar p span {
+    font-weight: bold;
+    color: var(--dark-grey-color); 
+}
+
+.left-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.flex-bar-space-between-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.multi-line-menu-bar span{
+    background-color: var(--background-color);
 }
 
 .user_view-content_section{
@@ -116,10 +152,12 @@ body{
     cursor: pointer;
 }
 
-.small-icons{
+.small-icons {
     height: 20px;
     width: 20px;
+    margin-right: 20px;
     cursor: pointer;
+    position: relative; 
 }
 
 .toggle-sidebar-btn {
@@ -276,6 +314,7 @@ body{
     justify-content: flex-end;  
     gap: 20px;
     width: 100%;
+    padding-right: 40px;
 }
 
 /** Property Listing */
@@ -364,4 +403,8 @@ body{
     font-size: 18px;
     font-weight: bold;
     margin: 0 10px;
+}
+
+.grey-text h2{
+    color: var(--dark-grey-color);
 }

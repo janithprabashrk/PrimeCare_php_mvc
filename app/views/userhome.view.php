@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="<?= ROOT ?>/assets/css/userview.css">
     <link rel="stylesheet" href="<?= ROOT ?>/assets/css/owner.css">
     <link rel="stylesheet" href="<?= ROOT ?>/assets/css/button.css">
+    <link rel="stylesheet" href="<?= ROOT ?>/assets/css/userUpdate.css">
+    <link rel="stylesheet" href="<?= ROOT ?>/assets/css/financialReport.css">
+    <link rel="stylesheet" href="<?= ROOT ?>/assets/css/components.css">
     <title>PrimeCare</title>
 </head>
 
@@ -15,7 +18,7 @@
         <div class="header-line">
             <img src="<?= ROOT ?>/assets/images/logo.png" alt="PrimeCare" class="header-logo-png">
             <button class="toggle-sidebar-btn" onclick="toggleSidebar()">☰ Menu</button>
-            <img src="<?= ROOT ?>/assets/images/user.png" alt="Profile" class="header-profile-picture">
+            <a href=""><img src="<?= ROOT ?>/assets/images/user.png" alt="Profile" class="header-profile-picture"></a>
         </div>
         <div class="content-section">
             <div class="user_view-sidemenu">
@@ -25,7 +28,7 @@
                 <button class="secondary-btn">Logout</button>
             </div>
             <div class="user_view-content_section">
-                <?php require_once 'owner/propertyListing.view.php'; ?>
+                <?php require_once 'owner/maintenance.view.php'; ?>
             </div>
         </div>
     </div>
