@@ -28,9 +28,8 @@
 
         <!-- Main Content -->
         <div class="user_view-content_section">
-            <div class="user_view-profile-section">
-                <br><br><br>
-                <div class="profile-container">
+            <div class="user_view-profile-section"></div>
+            <div class="profile-container">
                     <!-- Profile Picture Section -->
                     <div class="profile-picture-container">
                         <div class="profile-image-wrapper">
@@ -64,8 +63,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
             <!-- Footer or additional content if needed 
             <div class="user_view-footer">
                 <p>PrimeCare © 2024</p>
