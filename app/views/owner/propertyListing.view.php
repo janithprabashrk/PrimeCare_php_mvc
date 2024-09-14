@@ -12,15 +12,17 @@
 <div class="listing-the-property">
     <!-- Property Listings -->
     <div class="property-listing-grid">
-        <?php require 'components/propertyListingComponent.php' ?>
-        <?php require 'components/propertyListingComponent.php' ?>
-        <?php require 'components/propertyListingComponent.php' ?>
-        <?php require 'components/propertyListingComponent.php' ?>
-        <?php require 'components/propertyListingComponent.php' ?>
-        <?php require 'components/propertyListingComponent.php' ?>
-        <?php require 'components/propertyListingComponent.php' ?>
-        <?php require 'components/propertyListingComponent.php' ?>
-        <?php require 'components/propertyListingComponent.php' ?>
+        <?php require __DIR__ . '/../components/propertyListingComponent.php'; ?>
+        <?php require __DIR__ . '/../components/propertyListingComponent.php'; ?>
+        <?php require __DIR__ . '/../components/propertyListingComponent.php'; ?>
+        <?php require __DIR__ . '/../components/propertyListingComponent.php'; ?>
+        <?php require __DIR__ . '/../components/propertyListingComponent.php'; ?>
+        <?php require __DIR__ . '/../components/propertyListingComponent.php'; ?>
+        <?php require __DIR__ . '/../components/propertyListingComponent.php'; ?>
+        <?php require __DIR__ . '/../components/propertyListingComponent.php'; ?>
+        <?php require __DIR__ . '/../components/propertyListingComponent.php'; ?>
+        <?php require __DIR__ . '/../components/propertyListingComponent.php'; ?>
+        
     </div>
 
     <!-- Pagination Buttons -->
