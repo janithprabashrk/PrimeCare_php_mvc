@@ -1,8 +1,10 @@
+@import url('./variables.css');
+
 body {
     margin: 0;
     font-family: 'Poppins', Arial, sans-serif;
-    background-color: #f5f7fa;
-    color: #333;
+    background-color: var(--background-color);
+    color: var(--black-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,10 +21,10 @@ body {
 
 .signup-form {
     width: 500px;
-    background-color: hsl(0, 0%, 100%);
+    background-color: var(--background-color);
     padding: 20px 30px 0px 30px;
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow-form);
     text-align: center;
 }
 
@@ -36,7 +38,7 @@ body {
 .signup-form__welcome-text h2,
 .signup-form__welcome-text h4 {
     margin: 5px 0;
-    color: #333;
+    color: var(--black-color);
 }
 
 .signup-form__welcome-text h4 {
@@ -45,7 +47,7 @@ body {
 
 .signup-form__label {
     font-size: 14px;
-    color: #666;
+    color: var(--dark-grey-color);
     margin: 0px 0px -5px 10px;
     display: block;
     text-align: left;
@@ -56,15 +58,15 @@ body {
     padding: 12px;
     margin: 10px 0 10px;
     font-size: 14px;
-    border: 1px solid #ccc;
-    background-color: #f5f5fa;
+    border: 1px solid var(--input-border-color);
+    background-color: var(--background-color);
     border-radius: 6px;
     box-sizing: border-box;
     transition: border-color 0.3s ease;
 }
 
 .signup-form__input:focus {
-    border-color: #FCA311;
+    border-color: var(--primary-color);
     outline: none;
 }
 
@@ -72,7 +74,7 @@ body {
 .signup-form__name-fields {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 00px;
+    margin-bottom: 0px;
 }
 
 .signup-form__name-field {
@@ -82,11 +84,11 @@ body {
 .signup-form__password-fields {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 00px;
+    margin-bottom: 0px;
 }
 
 .signup-form__name-fields input{
-    color: #F5F5F5;
+    color: var(--background-color);
 }
 
 .signup-form__password-field {
@@ -96,18 +98,19 @@ body {
 .signup-form__submit-button {
     width: 100%;
     padding: 14px;
-    background-color: #fba823;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--white-color);
     font-size: 16px;
     font-weight: 600;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 10px;
 }
 
 .signup-form__submit-button:hover {
-    background-color: #ffc464;
+    background-color: var(--primary-color-hover);
 }
 
 /* Links */
@@ -121,18 +124,18 @@ body {
 
 .signup-form__login-link {
     font-weight: bold;
-    color: #3498db;
+    color: var(--link-color);
     text-decoration: none;
 }
 
 .signup-form__login-link:hover {
-    color: #1d6fa5;
+    color: var(--link-color-hover);
 }
 
 .social-login h4 {
     margin: 5px 0;
     font-size: 16px;
-    color: #333;
+    color: var(--black-color);
 }
 
 .social-login__button {
@@ -142,8 +145,8 @@ body {
     gap: 10px;
     width: 100%;
     padding: 14px;
-    background-color: #fba823;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--white-color);
     font-size: 16px;
     font-weight: 600;
     border: none;
@@ -154,7 +157,7 @@ body {
 }
 
 .social-login__button:hover {
-    background-color: #ffc464;
+    background-color: var(--primary-color-hover);
 }
 
 .social-login__button img {
@@ -165,6 +168,6 @@ body {
 
 .signup-form__existing-account h5 {
     font-size: 14px;
-    color: #666;
+    color: var(--dark-grey-color);
     margin-top: 10px;
 }

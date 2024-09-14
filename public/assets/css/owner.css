@@ -1,0 +1,143 @@
+@import url('./Button.css');
+@import url('./variables.css');
+
+/** Manager - Add Property  */
+.owner-addProp-container {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    padding: 10px 20px;
+    gap: 20px;
+}
+
+.owner-addProp-container p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--dark-grey-color);
+}
+
+.owner-addProp-form-left, .owner-addProp-form-right {
+    width: 48%;
+    background-color: var(--white-color);
+    padding: 20px;
+}
+
+
+.owner-addProp-file-upload {
+    border: 2px dashed rgba(var(--primary-color-rgb), 0.3);
+    background-color: rgba(var(--primary-color-rgb), 0.15);
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.owner-addProp-file-upload input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.owner-addProp-file-upload .owner-addProp-upload-area {
+    padding: 10px;
+}
+
+.upload-area-no-margin{
+    margin: 0;
+}
+
+.owner-addProp-uploaded-files {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.owner-addProp-uploaded-file {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.owner-addProp-progress-bar {
+    width: 70%;
+    background-color: var(--primary-color-hover);
+    height: 5px;
+    margin: 0 10px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.owner-addProp-progress {
+    height: 100%;
+    background-color: #4CAF50;
+    width: 0;
+    border-radius: 3px;
+}
+
+button.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.items-inline{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.owner-addProp-upload-logo{
+    height: 60px;
+    width: 60px;
+    margin: -15px;
+    padding: 0;
+    opacity: 0.5;
+}
+
+.owner-addProp-container input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+}
+
+.owner-addProp-container input[type="checkbox"]:checked{
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.owner-addProp-container input[type="checkbox"]:checked::before{
+    content: '\2713';
+    color: var(--white-color);
+    font-size: 16px;
+    position: absolute;
+    top: -2px;
+    left: 3px;
+}
+
+.buttons-to-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+/** Property Listing */

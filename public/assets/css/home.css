@@ -1,0 +1,59 @@
+@import url('./variables.css');
+@import url('./Button.css');
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Block: html */
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+/* Block: body */
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--black-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+section{
+    scroll-snap-align: center;
+}
+
+/* Block: main-content */
+.main-content {
+    background-color: var(--background-color);
+}
+
+/* Block: main */
+.main {
+    flex: 1;
+    width: 100%;
+    padding-top: 60px; /* Adjust based on the height of your fixed navbar */
+}
+
+/* Block: section */
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 60px); /* Adjust based on the height of your fixed navbar */
+}
+
+section .section--hero {
+    background-image: url("<?= ROOT ?>/assets/images/hero.jpg"); /* Corrected URL */
+}
