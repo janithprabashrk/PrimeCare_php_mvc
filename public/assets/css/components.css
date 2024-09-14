@@ -1,5 +1,7 @@
 @import url('./variables.css');
 
+
+/** Property Card Css*/
 .property-card {
     display: flex;
     flex-direction: column;
@@ -73,12 +75,6 @@
     line-height: 1.4;
 }
 
-
-
-
-
-
-
 .property-actions {
     display: flex;
     align-items: center;
@@ -106,4 +102,88 @@
 
 .property-actions .delete-btn:hover {
     color: #F44336;
+}
+
+
+/* Service Card Css*/
+.service-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-color);
+    border-radius: 20px;
+    padding: 20px; 
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.service-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 10px; 
+}
+
+.service-card-header h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.service-card-header p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0; 
+}
+
+.service-card-content {
+    padding: 0;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: row;
+    gap: 15px; 
+    width: 100%;
+    align-items: center;
+    margin-bottom: 5px; 
+}
+
+.service-card-label {
+    width: 150px;
+    font-size: 14px;
+    color: var(--dark-grey-color);
+    margin: 0; 
+}
+
+.service-card-field {
+    flex: 1; 
+    padding: 10px;
+    margin: 0;
+    font-size: 14px;
+    color: var(--dark-grey-color);
+    border: 1px solid var(--input-border-color);
+    background-color: var(--background-color);
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.field-group .service-card-field {
+    margin-left: 0; 
+    width: auto; 
+    justify-content: flex-start;
+    word-wrap: break-word; 
+}
+
+.green-text {
+    color: var(--green-color);
+}
+
+.orange-text {
+    color: var(--primary-color);
+}
+
+.red-text {
+    color: var(--red-color);
 }
