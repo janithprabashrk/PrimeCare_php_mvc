@@ -168,6 +168,7 @@
     border-radius: 5px;
     box-sizing: border-box;
     transition: border-color 0.3s ease;
+    word-wrap: break-word;
 }
 
 .field-group .service-card-field {
@@ -191,4 +192,43 @@
 
 .flex-bar{
     margin-left: 20px;
+}
+
+/* Tenant Card Css*/
+.tenant-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--white-color);
+    border-radius: 20px;
+    padding: 20px; 
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.tenant-card-left{
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    width: 70%;
+}
+
+.profile-picture-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 20px;
+    width: 20%;
+}
+
+.profile-picture-section img{
+    width: 250px;
+    /* height: 100px; */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--primary-color);
 }
