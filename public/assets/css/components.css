@@ -115,6 +115,7 @@
     box-shadow: var(--box-shadow);
     overflow: hidden;
     margin: 20px auto;
+    max-width: 1000px;
 }
 
 .service-card-header {
@@ -186,4 +187,8 @@
 
 .red-text {
     color: var(--red-color);
+}
+
+.flex-bar{
+    margin-left: 20px;
 }

@@ -157,3 +157,6 @@ button.delete-btn {
     background-color: var(--background-color);
 }
 
+.bolder-text{
+    font-weight: 500;
+}

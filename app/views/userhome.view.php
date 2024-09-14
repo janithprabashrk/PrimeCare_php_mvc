@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="<?= ROOT ?>/assets/css/button.css">
     <link rel="stylesheet" href="<?= ROOT ?>/assets/css/userUpdate.css">
     <link rel="stylesheet" href="<?= ROOT ?>/assets/css/financialReport.css">
+    <link rel="stylesheet" href="<?= ROOT ?>/assets/css/components.css">
     <title>PrimeCare</title>
 </head>
 
@@ -27,7 +28,7 @@
                 <button class="secondary-btn">Logout</button>
             </div>
             <div class="user_view-content_section">
-                <?php require_once 'owner/financeReport.view.php'; ?>
+                <?php require_once 'owner/maintenance.view.php'; ?>
             </div>
         </div>
     </div>

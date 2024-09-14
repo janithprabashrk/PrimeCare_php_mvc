@@ -1,7 +1,7 @@
 <div class="service-card">
     <div class="service-card-header">
         <h3>Service No</h3>
-        <p class="service-card-status red-text">Done</p>
+        <p class="service-card-status green-text">Done</p>
     </div>
     <div class="service-card-content">
         <div class="field-group">
