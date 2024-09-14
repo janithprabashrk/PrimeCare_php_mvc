@@ -20,6 +20,7 @@
     width: 48%;
     background-color: var(--white-color);
     padding: 20px;
+    border-radius: 20px;
 }
 
 
@@ -141,3 +142,18 @@ button.delete-btn {
 
 
 /** Property Listing */
+
+.user_view-menu-bar p{
+    margin-left: 10px;
+}
+
+.multi-line-munu-bar{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.multi-line-munu-bar span{
+    background-color: var(--background-color);
+}
+
