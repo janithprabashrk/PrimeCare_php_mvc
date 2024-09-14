@@ -77,14 +77,19 @@
     color: white;
 }
 
-        /* Main Content Section */
-        .user_view-content_section {
-            flex-grow: 1;
-            padding: 20px;
-            display: flex;
-            justify-content: center; /* Centers the profile form */
-            align-items: flex-start;
-        }
+.user_view-profile-section{
+    width: 100%;
+    height: 10%;
+    background-color: #fff;
+}
+
+.user_view-content_section{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 100%;
+    background-color: #f5f5f5;
+}
 
         /* Profile Picture Section */
         .profile-picture-container {
