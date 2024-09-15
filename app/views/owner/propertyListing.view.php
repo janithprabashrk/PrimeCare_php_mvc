@@ -5,7 +5,11 @@
             <input type="text" class="search-input" placeholder="Search Anything...">
             <button class="search-btn"><img src="<?= ROOT ?>/assets/images/search.png" alt="Search" class="small-icons"></button>
         </div>
-        <button class="add-btn"><img src="<?= ROOT ?>/assets/images/plus.png" alt="Add" class="navigate-icons"></button>
+        <!-- <button class="add-btn"><img src="<?= ROOT ?>/assets/images/plus.png" alt="Add" class="navigate-icons"></button> -->
+        <div class="tooltip-container">
+            <button class="add-btn"><img src="<?= ROOT ?>/assets/images/plus.png" alt="Add" class="navigate-icons"></button>
+            <span class="tooltip-text">Add new property</span>
+        </div>
     </div>
 </div>
 
@@ -22,7 +26,7 @@
         <?php require __DIR__ . '/../components/propertyListingComponent.php'; ?>
         <?php require __DIR__ . '/../components/propertyListingComponent.php'; ?>
         <?php require __DIR__ . '/../components/propertyListingComponent.php'; ?>
-        
+
     </div>
 
     <!-- Pagination Buttons -->

@@ -81,7 +81,16 @@
                 </div>
             </div>
 
-            
+            <div class="input-group">
+                <div class="input-group-group">
+                    <label class="input-label">Bedrooms*</label>
+                    <input type="text" name="bedrooms" placeholder="Enter No Of Bedrooms" class="input-field" required>
+                </div>
+                <div class="input-group-group">
+                    <label class="input-label">Bathrooms*</label>
+                    <input type="text" name="bathrooms" placeholder="Enter No of Bathrooms" class="input-field" required>
+                </div>
+            </div>            
 
             <div class="input-group-group">
                 <label class="input-label">Floor Plan</label>
