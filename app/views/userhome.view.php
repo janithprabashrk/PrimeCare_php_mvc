@@ -28,7 +28,7 @@
                 <button class="secondary-btn">Logout</button>
             </div>
             <div class="user_view-content_section">
-                <?php require_once 'owner/tenants.view.php'; ?>
+                <?php require_once 'owner/propertyUnit.view.php'; ?>
             </div>
         </div>
     </div>

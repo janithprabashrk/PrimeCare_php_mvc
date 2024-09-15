@@ -232,3 +232,28 @@
     object-fit: cover;
     border: 1px solid var(--primary-color);
 }
+
+/* Review field Css*/
+.review-field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color);
+    border-radius: 20px;
+    margin: 10px 0;
+}
+
+.review-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid var(--light-grey-color);
+}
+
+.review-field span{
+    font-size: 0.9rem;
+    color: var(--dark-grey-color);
+}

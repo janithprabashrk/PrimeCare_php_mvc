@@ -2,11 +2,11 @@
 @import url('./variables.css');
 @import url('./components.css');
 
-body{
+body {
     background-color: var(--background-color);
 }
 
-.user_view-container{
+.user_view-container {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -14,7 +14,7 @@ body{
     font-family: 'Poppins', Arial, sans-serif;
 }
 
-.header-line{
+.header-line {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,30 +30,30 @@ body{
     box-shadow: var(--box-shadow);
 }
 
-.header-line a img{
+.header-line a img {
     cursor: pointer;
 }
 
-.content-section{
+.content-section {
     display: flex;
     flex: 1;
     padding-top: 60px;
     background-color: val(--background-color);
 }
 
-.header-logo-png{
+.header-logo-png {
     width: 180px;
     height: 100%;
 }
 
-.header-profile-picture{
+.header-profile-picture {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin: 0 30px;
 }
 
-.user_view-sidemenu{
+.user_view-sidemenu {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,23 +71,23 @@ body{
     padding: 15px 0;
 }
 
-.user_view-sidemenu button{
+.user_view-sidemenu button {
     width: 100%;
 }
 
-.user_view-sidemenu ul{
+.user_view-sidemenu ul {
     list-style-type: none;
     padding: 0;
     width: 100%;
 }
 
-.user_view-sidemenu ul li{
+.user_view-sidemenu ul li {
     cursor: pointer;
     padding: 5px 0;
     text-align: center;
 }
 
-.user_view-menu-bar{
+.user_view-menu-bar {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -100,14 +100,14 @@ body{
     background-color: var(--white-color);
 }
 
-.user_view-menu-bar h2{
+.user_view-menu-bar h2 {
     margin: 3px 10px;
     text-transform: uppercase;
     font-weight: 530;
     font-size: 1.5rem;
 }
 
-.user_view-menu-bar p{
+.user_view-menu-bar p {
     margin: 3px;
     padding-left: 5px;
     font-size: 0.9rem;
@@ -115,17 +115,18 @@ body{
 
 .multi-line-munu-bar p span {
     font-weight: bold;
-    color: var(--dark-grey-color); 
+    color: var(--dark-grey-color);
 }
 
-.left-content{
+.left-content {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
     gap: 10px;
 }
 
-.flex-bar-space-between-row{
+.flex-bar-space-between-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -134,34 +135,37 @@ body{
     width: 100%;
 }
 
-.multi-line-menu-bar span{
+.multi-line-menu-bar span {
     background-color: var(--background-color);
 }
 
-.user_view-content_section{
+.user_view-content_section {
     flex: 1;
     margin-left: 250px;
     padding: 15px 0;
     overflow-y: auto;
     height: calc(100vh - 60px);
+    /* overflow: hidden;
+    box-sizing: border-box; */
 }
 
-.navigate-icons{
+.navigate-icons {
     height: 40px;
     width: 40px;
     cursor: pointer;
 }
 
 .small-icons {
-    height: 20px;
-    width: 20px;
+    height: 24px;
+    width: 24px;
     margin-right: 20px;
     cursor: pointer;
-    position: relative; 
+    position: relative;
 }
 
 .toggle-sidebar-btn {
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     position: fixed;
     top: 10px;
     right: 10px;
@@ -177,11 +181,13 @@ body{
 /* Media query for small screens */
 @media (max-width: 768px) {
     .user_view-sidemenu {
-        display: none; /* Hide sidebar on small screens */
+        display: none;
+        /* Hide sidebar on small screens */
     }
 
     .user_view-content_section {
-        margin-left: 0; /* Full-width content section */
+        margin-left: 0;
+        /* Full-width content section */
     }
 
     /* Optional: Add a button to toggle the sidebar on mobile */
@@ -203,7 +209,7 @@ body{
 
 
 /** Listing */
-.listing{
+.listing {
     display: flex;
     flex-direction: column;
     width: 33%;
@@ -215,7 +221,7 @@ body{
 
 
 /** Profile page */
-.profile-container{
+.profile-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -226,14 +232,14 @@ body{
     justify-items: center;
 }
 
-.profile-details{
+.profile-details {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 40%;
 }
 
-.profile-edit-form{
+.profile-edit-form {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -243,7 +249,7 @@ body{
     box-shadow: var(--box-shadow);
 }
 
-.input-label{
+.input-label {
     font-size: 14px;
     color: var(--dark-grey-color);
     display: block;
@@ -251,7 +257,7 @@ body{
     margin-bottom: 5px;
 }
 
-.input-field{
+.input-field {
     width: 100%;
     padding: 15px;
     margin: 10px 0;
@@ -263,12 +269,12 @@ body{
     transition: border-color 0.3s ease;
 }
 
-.input-field:focus{
+.input-field:focus {
     border-color: var(--primary-color);
     outline: none;
 }
 
-.profile-edit-form{
+.profile-edit-form {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -286,7 +292,7 @@ body{
     justify-content: center;
 }
 
-.input-group{
+.input-group {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -294,13 +300,13 @@ body{
     /* margin: 10px; */
 }
 
-.input-group-group{
+.input-group-group {
     display: flex;
     flex-direction: column;
     flex: 1;
 }
 
-.profile-picture{
+.profile-picture {
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -309,9 +315,9 @@ body{
     border: 1px solid var(--primary-color);
 }
 
-.flex-bar{
+.flex-bar {
     display: flex;
-    justify-content: flex-end;  
+    justify-content: flex-end;
     gap: 20px;
     width: 100%;
     padding-right: 40px;
@@ -364,15 +370,17 @@ body{
 /* Property Listing Grid Layout */
 .property-listing-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
     gap: -10px;
     padding: 5px;
 }
 
 @media screen and (max-width: 768px) {
     .property-listing-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    }  
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns */
+    }
 }
 
 /* Pagination Styling */
@@ -384,18 +392,22 @@ body{
 }
 
 .pagination button {
-    background-color: transparent; /* Transparent background for image */
-    border: none; /* Remove border */
+    background-color: transparent;
+    /* Transparent background for image */
+    border: none;
+    /* Remove border */
     cursor: pointer;
     padding: 10px 20px;
 }
 
 .pagination button img {
-    width: 24px; /* Set the size of the image */
-    height: 24px; /* Set the size of the image */
+    width: 24px;
+    /* Set the size of the image */
+    height: 24px;
+    /* Set the size of the image */
 }
 
-.pagination button:hover{
+.pagination button:hover {
     filter: hue-rotate(35deg) saturate(3);
 }
 
@@ -405,6 +417,6 @@ body{
     margin: 0 10px;
 }
 
-.grey-text h2{
+.grey-text h2 {
     color: var(--dark-grey-color);
 }
