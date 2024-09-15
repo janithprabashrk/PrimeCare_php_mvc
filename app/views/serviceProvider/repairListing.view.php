@@ -1,5 +1,5 @@
 <div class="user_view-menu-bar">
-    <button class="add-btn"><img src="<?= ROOT ?>/assets/images/backButton.png" alt="Back" class="navigate-icons"></button>
+    <button class="back-btn"><img src="<?= ROOT ?>/assets/images/backButton.png" alt="back" class="navigate-icons"></button>
     <h2>Repairs</h2>
     <div class="flex-bar">
         <div class="search-container">

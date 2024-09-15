@@ -328,12 +328,11 @@ body{
     background: none;
     border: none;
     cursor: pointer;
-    margin-right: 10px;
 }
 
 .back-btn img {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
 }
 
 /* Property Listing Grid Layout */
