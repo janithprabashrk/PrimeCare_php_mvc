@@ -4,11 +4,11 @@
     /* width: 100%; */
     max-width: 200px;
     min-width: 150px;
-    padding: 10px 25px;
+    padding: 10px 20px;
     background-color: var(--primary-color);
     color: var(--white-color);
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 500;
     border: 2px solid var(--primary-color);
     border-radius: 5px;
     cursor: pointer;
@@ -24,11 +24,11 @@
     /* width: 100%; */
     max-width: 200px;
     min-width: 150px;
-    padding: 10px 25px; 
+    padding: 10px 20px; 
     background-color: var(--white-color);
     color: var(--primary-color); 
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 500;
     border: 2px solid var(--primary-color);
     border-radius: 5px; 
     outline: none; 
