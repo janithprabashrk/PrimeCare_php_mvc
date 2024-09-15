@@ -7,7 +7,16 @@
                 <p><span>Maintained By: </span>Agent's Name</p>
             </div>
         </div>
-        <img src="<?= ROOT ?>/assets/images/bars.png" alt="Print" class="small-icons align-to-right">
+        <div>
+            <div class="tooltip-container">
+                <img src="<?= ROOT ?>/assets/images/bars.png" alt="Print" class="small-icons align-to-right">
+                <span class="tooltip-text">Financial Report</span>
+            </div>
+            <div class="tooltip-container">
+                <img src="<?= ROOT ?>/assets/images/caution.png" alt="Problem" class="small-icons align-to-right">
+                <span class="tooltip-text">Report a Problem</span>
+            </div>
+        </div>
     </div>
 </div>
 

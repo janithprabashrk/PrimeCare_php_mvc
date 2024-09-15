@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="<?= ROOT ?>/assets/css/userUpdate.css">
     <link rel="stylesheet" href="<?= ROOT ?>/assets/css/financialReport.css">
     <link rel="stylesheet" href="<?= ROOT ?>/assets/css/components.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <title>PrimeCare</title>
 </head>
 
@@ -28,7 +31,7 @@
                 <button class="secondary-btn">Logout</button>
             </div>
             <div class="user_view-content_section">
-                <?php require_once 'owner/propertyUnit.view.php'; ?>
+                <?php require_once 'owner/dashboard.view.php'; ?>
             </div>
         </div>
     </div>
