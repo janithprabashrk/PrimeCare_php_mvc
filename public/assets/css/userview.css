@@ -367,6 +367,19 @@ body {
     height: 24px;
 }
 
+/* Styling for the back button */
+
+.back-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.back-btn img {
+    width: 30px;
+    height: 30px;
+}
+
 /* Property Listing Grid Layout */
 .property-listing-grid {
     display: grid;
@@ -419,4 +432,8 @@ body {
 
 .grey-text h2 {
     color: var(--dark-grey-color);
+}
+
+.property-card{
+    cursor: pointer;
 }

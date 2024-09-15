@@ -391,6 +391,7 @@ button.delete-btn {
     margin: auto;
     display: flex;
     flex-direction: column;
+    gap: 0;
 }
 
 .top-section,
@@ -398,8 +399,8 @@ button.delete-btn {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-bottom: 20px;
-    padding-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 10px;
     gap: 20px;
     width: 100%;
 }
