@@ -50,7 +50,7 @@
                         "address" => "66/2 marine drive, Colombo",
                         "property_id" => "11320",
                         "salary" => "55000.00",
-                        "image" => "agent1.png" // Path to agent's image
+                        "image" => "../../../public/assets/images/Agent.png" 
                     ],
                     [
                         "name" => "Agent2",
@@ -59,7 +59,7 @@
                         "address" => "66/2 marine drive, Colombo",
                         "property_id" => "11320",
                         "salary" => "55000.00",
-                        "image" => "agent2.png" // Path to agent's image
+                        "image" => "../../../public/assets/images/Agent.png" 
                     ],
                     [
                         "name" => "Agent3",
@@ -68,7 +68,7 @@
                         "address" => "66/2 marine drive, Colombo",
                         "property_id" => "11320",
                         "salary" => "55000.00",
-                        "image" => "agent3.png" // Path to agent's image
+                        "image" => "../../../public/assets/images/Agent.png" 
                     ]
                 ];
 
@@ -77,14 +77,14 @@
                     echo "
                     <div class='agent-card'>
                         <div class='agent-details'>
-                            <p><strong>Name</strong>: {$agent['name']}</p>
-                            <p><strong>Date joined</strong>: {$agent['date_joined']}</p>
-                            <p><strong>Agent ID</strong>: {$agent['agent_id']}</p>
-                            <p><strong>Address</strong>: {$agent['address']}</p>
+                            <p><Strong>Name </Strong>: {$agent['name']}</p>
+                            <p><Strong>Date joined </Strong>: {$agent['date_joined']}</p>
+                            <p><Strong>Agent ID </Strong>: {$agent['agent_id']}</p>
+                            <p><Strong>Address </Strong>: {$agent['address']}</p>
                         </div>
                         <div class='agent-info'>
-                            <p><strong>Current assigned property ID</strong>: {$agent['property_id']}</p>
-                            <p><strong>Salary (LKR)</strong>: {$agent['salary']}</p>
+                            <p><Strong>Current assigned property ID </Strong>: {$agent['property_id']}</p>
+                            <p><Strong>Salary (LKR) </Strong>: {$agent['salary']}</p>
                         </div>
                         <div class='agent-remove'>
                             <img src='" . ROOT . "/assets/images/{$agent['image']}' alt='Agent Image' class='agent-img'>
