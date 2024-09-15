@@ -1,15 +1,15 @@
 <div class="property-card">
     <div class="property-image">
-        <img src="<?= ROOT ?>/assets/images/DoorRepair.jpg" alt="Oceanview Retreat 2">
+        <img src="<?= ROOT ?>/assets/images/DoorRepair.jpg" alt="services">
     </div>
-    <div class="repair-details">
-        <div class="repair-details-items">
+    <div class="property-details">
+        <div class="profile-details-items">
             <div>
-                <h4>Door Repairing</h4>
+                <h3>Service 1</h3>
             </div>
         </div>
-        <div>
-            <p class="repair-description"><img src="<?= ROOT ?>/assets/images/location.png" class="property-info-img" /> No 365, lane name, lane name 2, city name</p>
-        </div>
+        <p class="property-description">
+            Welcome to Oceanview Retreat, an exquisite beachfront property located in the vibrant city of Miami, Florida.
+        </p>
     </div>
 </div>

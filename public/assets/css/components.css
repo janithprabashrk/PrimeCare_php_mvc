@@ -11,7 +11,8 @@
     box-shadow: var(--box-shadow);
     overflow: hidden;
     max-width: 400px;
-    margin: 20px;
+    margin: 10px;
+    cursor: pointer;
 }
 
 .property-image img {
@@ -29,7 +30,7 @@
     box-sizing: border-box;
 }
 
-.profile-details-items{
+.profile-details-items {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,12 +44,12 @@
     flex-direction: row;
 }
 
-.property-info span{
+.property-info span {
     display: flex;
     align-content: center;
 }
 
-.property-info-img{
+.property-info-img {
     width: 15px;
     height: 15px;
     margin-right: 5px;
@@ -83,7 +84,7 @@
     box-sizing: border-box;
 }
 
-.repair-details-items{
+.repair-details-items {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -98,7 +99,7 @@
 .repair-description {
     margin: 0;
     color: var(--dark-grey-color);
-    font-size: 0.9rem;   
+    font-size: 0.9rem;
 }
 
 .property-actions {
@@ -116,7 +117,8 @@
     font-weight: 600;
 }
 
-.property-actions .edit-btn, .property-actions .delete-btn {
+.property-actions .edit-btn,
+.property-actions .delete-btn {
     font-size: 1.2rem;
     color: #ccc;
     cursor: pointer;
@@ -137,7 +139,7 @@
     flex-direction: column;
     background-color: var(--white-color);
     border-radius: 20px;
-    padding: 20px; 
+    padding: 20px;
     box-shadow: var(--box-shadow);
     overflow: hidden;
     margin: 20px auto;
@@ -149,7 +151,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 .service-card-header h3 {
@@ -160,7 +162,7 @@
 .service-card-header p {
     font-size: 1.2rem;
     font-weight: 600;
-    margin: 0; 
+    margin: 0;
 }
 
 .service-card-content {
@@ -170,21 +172,21 @@
 .field-group {
     display: flex;
     flex-direction: row;
-    gap: 15px; 
+    gap: 15px;
     width: 100%;
     align-items: center;
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
 }
 
 .service-card-label {
     width: 150px;
     font-size: 14px;
     color: var(--dark-grey-color);
-    margin: 0; 
+    margin: 0;
 }
 
 .service-card-field {
-    flex: 1; 
+    flex: 1;
     padding: 10px;
     margin: 0;
     font-size: 14px;
@@ -198,10 +200,10 @@
 }
 
 .field-group .service-card-field {
-    margin-left: 0; 
-    width: auto; 
+    margin-left: 0;
+    width: auto;
     justify-content: flex-start;
-    word-wrap: break-word; 
+    word-wrap: break-word;
 }
 
 .green-text {
@@ -216,32 +218,32 @@
     color: var(--red-color);
 }
 
-.flex-bar{
+.flex-bar {
     margin-left: 20px;
 }
 
 /* Tenant Card Css*/
-.tenant-card{
+.tenant-card {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: var(--white-color);
     border-radius: 20px;
-    padding: 20px; 
+    padding: 20px;
     box-shadow: var(--box-shadow);
     overflow: hidden;
     margin: 20px auto;
     max-width: 1000px;
 }
 
-.tenant-card-left{
+.tenant-card-left {
     display: flex;
     flex-direction: column;
     /* gap: 10px; */
     width: 70%;
 }
 
-.profile-picture-section{
+.profile-picture-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -251,7 +253,7 @@
     width: 20%;
 }
 
-.profile-picture-section img{
+.profile-picture-section img {
     width: 250px;
     /* height: 100px; */
     border-radius: 50%;
@@ -260,7 +262,7 @@
 }
 
 /* Review field Css*/
-.review-field{
+.review-field {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -269,7 +271,7 @@
     margin: 10px 0;
 }
 
-.review-header{
+.review-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -279,7 +281,7 @@
     border-bottom: 1px solid var(--light-grey-color);
 }
 
-.review-field span{
+.review-field span {
     font-size: 0.9rem;
     color: var(--dark-grey-color);
 }

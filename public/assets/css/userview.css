@@ -433,3 +433,7 @@ body {
 .grey-text h2 {
     color: var(--dark-grey-color);
 }
+
+.property-card{
+    cursor: pointer;
+}
