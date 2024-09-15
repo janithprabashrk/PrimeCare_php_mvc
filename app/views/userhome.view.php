@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="<?= ROOT ?>/assets/css/financialReport.css">
     <link rel="stylesheet" href="<?= ROOT ?>/assets/css/components.css">
     <link rel="stylesheet" href="<?= ROOT ?>/assets/css/forms.css">
+    <link rel="stylesheet" href="<?= ROOT ?>/assets/css/manager.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">

@@ -58,7 +58,8 @@
 }
 
 .input-label-aligend{
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 600;
     color: var(--dark-grey-color);
     display: block;
     text-align: left;
@@ -70,3 +71,4 @@
     height: 20px;
     border-radius: 50%;
 }
+

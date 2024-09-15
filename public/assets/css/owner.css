@@ -272,11 +272,13 @@ button.delete-btn {
     padding: 5px;
     margin: 5px 0;
     font-size: 12px;
+    font-weight: 600;
     color: var(--dark-grey-color);
     background-color: var(--background-color);
     border-radius: 5px;
     box-sizing: border-box;
     transition: border-color 0.3s ease;
+    margin-right: 10px;
 }
 
 .more-padding {
@@ -452,11 +454,12 @@ button.delete-btn {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 200px; /* Ensure enough height for content */
+    min-height: 200px;
+    /* Ensure enough height for content */
 }
 
 
-.outstanding-payments{
+.outstanding-payments {
     background-color: var(--white-color);
     border-radius: 8px;
     padding: 20px;
@@ -465,13 +468,13 @@ button.delete-btn {
     margin: auto;
 }
 
-.outstanding-flex-bar{
+.outstanding-flex-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.outstanding-flex-bar div{
+.outstanding-flex-bar div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -506,7 +509,7 @@ button.delete-btn {
     color: var(--dark-grey-color);
 }
 
-.maintenance-status a{
+.maintenance-status a {
     align-items: end;
 }
 
@@ -522,10 +525,11 @@ button.delete-btn {
     font-weight: 550;
 }
 
-td.blue-color{
+td.blue-color {
     color: var(--link-color);
 }
-td.green-color{
+
+td.green-color {
     color: var(--green-color);
 }
 
