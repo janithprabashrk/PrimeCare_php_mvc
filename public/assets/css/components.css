@@ -285,3 +285,76 @@
     font-size: 0.9rem;
     color: var(--dark-grey-color);
 }
+
+/* Property assign Card Css*/
+
+.property-assign-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-color);
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+.property-assign-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--background-color);
+}
+
+/* Approval Card Css*/
+.approval-container {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--white-color);
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    width: 90%;
+}
+
+.approval-left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+.approval-right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    width: 20%;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-left: 1px solid var(--background-color);
+}
+
+.approval-right-content button {
+    margin: 0;
+    width: 100%;
+}
+
+.approval-right-content .secondary-btn:hover {
+    background-color: var(--red-color);
+}
+
+.approval-right-content-img{
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.rounded-images{
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+}
