@@ -31,6 +31,6 @@
     <div class="approval-right-content">
         <button class="primary-btn">Accept</button>
         <button class="secondary-btn">Decline</button>
-        <img src="<?= ROOT ?>/assets/images/listing_alt.jpg" alt="property">
+        <img src="<?= ROOT ?>/assets/images/listing_alt.jpg" alt="property" class="approval-right-content-img">
     </div>
 </div>
