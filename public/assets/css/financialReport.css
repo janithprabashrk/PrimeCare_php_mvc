@@ -8,7 +8,7 @@
     background-color: var(--white-color);
     border-radius: 10px;
     box-shadow: var(--box-shadow);
-    font-family: 'Poppins', Arial, sans-serif;
+    font-family: "Outfit", sans-serif;
 }
 
 .financial-details-container h2 {
@@ -21,7 +21,7 @@
     width: 100%;
     border-collapse: collapse;
     table-layout: fixed; /* Fixed table layout */
-    font-family: 'Poppins', Arial, sans-serif;
+    font-family: "Outfit", sans-serif;
 }
 
 .financial-table th, .financial-table td {
@@ -34,6 +34,7 @@
     overflow: hidden; /* Ensures no overflow issues */
     text-overflow: ellipsis; /* Adds ellipsis (...) for overflowing text */
     white-space: nowrap; /* Prevents text from wrapping to a new line */
+    font-family: "Outfit", sans-serif;
 }
 
 .financial-table th {
