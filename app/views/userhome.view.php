@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="<?= ROOT ?>/assets/css/financialReport.css">
     <link rel="stylesheet" href="<?= ROOT ?>/assets/css/components.css">
     <link rel="stylesheet" href="<?= ROOT ?>/assets/css/forms.css">
+    <link rel="stylesheet" href="<?= ROOT ?>/assets/css/serviceProvider.css">
     <link rel="icon" href="<?= ROOT ?>/assets/images/p.png" type="image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +35,7 @@
                 <button class="secondary-btn">Logout</button>
             </div>
             <div class="user_view-content_section">
-                <?php require_once 'serviceProvider/dashboard.view.php'; ?>
+                <?php require_once 'serviceProvider/repairsRequests.view.php'; ?>
             </div>
         </div>
     </div>
