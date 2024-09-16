@@ -34,7 +34,7 @@
                 <button class="secondary-btn">Logout</button>
             </div>
             <div class="user_view-content_section">
-                <?php require_once 'manager/managementHome.view.php'; ?>
+                <?php require_once 'manager/propertyManagement.view.php'; ?>
             </div>
         </div>
     </div>
