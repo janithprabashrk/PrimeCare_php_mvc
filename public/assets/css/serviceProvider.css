@@ -122,3 +122,12 @@ th.sortable:hover img {
     outline: none;
     border-color: var(--primary-color);
 }
+
+/* Change cursor and background color on hover */
+.listing-table tbody tr {
+    cursor: pointer; /* Show the pointer to indicate it's clickable */
+}
+
+.listing-table tbody tr:hover {
+    background-color: #f5f5f5; /* Highlight the row on hover */
+}

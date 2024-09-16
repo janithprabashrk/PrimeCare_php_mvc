@@ -34,7 +34,7 @@
             </tr>
         </thead>
         <tbody>
-        <tr>
+            <tr data-href="">
                 <td>2024/09/2</td>
                 <td>RT001</td>
                 <td>P123</td>
@@ -43,7 +43,7 @@
                 <td><span class="border-button-sm green">Done</span></td>
                 <td>-</td>
             </tr>
-            <tr>
+            <tr data-href="">
                 <td>2024/09/11</td>
                 <td>RT001</td>
                 <td>P123</td>
@@ -52,7 +52,7 @@
                 <td><span class="border-button-sm orange">pending</span></td>
                 <td>36 hr</td>
             </tr>
-            <tr>
+            <tr data-href="">
                 <td>2024/09/3</td>
                 <td>RT001</td>
                 <td>P123</td>
@@ -61,7 +61,7 @@
                 <td><span class="border-button-sm green">Done</span></td>
                 <td>-</td>
             </tr>
-            <tr>
+            <tr data-href="">
                 <td>2024/09/30</td>
                 <td>RT001</td>
                 <td>P123</td>
@@ -70,7 +70,7 @@
                 <td><span class="border-button-sm green">Done</span></td>
                 <td>-</td>
             </tr>
-            <tr>
+            <tr data-href="">
                 <td>2024/09/4</td>
                 <td>RT001</td>
                 <td>P123</td>
@@ -79,7 +79,7 @@
                 <td><span class="border-button-sm orange">pending</span></td>
                 <td>36 hr</td>
             </tr>
-            <tr>
+            <tr data-href="">
                 <td>2024/10/23</td>
                 <td>RT001</td>
                 <td>P123</td>
@@ -101,7 +101,7 @@
 
 <script>
     document.getElementById('status-filter').addEventListener('change', filterTable);
-   
+
     let isDateAscending = true;
     let isEarningsAscending = true;
 
@@ -158,4 +158,10 @@
         const tbody = document.querySelector('.listing-table tbody');
         rows.forEach(row => tbody.appendChild(row)); // Re-append sorted rows
     }
+
+    document.querySelectorAll('.listing-table tbody tr').forEach(row => {
+        row.addEventListener('click', function() {
+            window.location.href = this.dataset.href; // Redirect to the URL in the data-href attribute
+        });
+    });
 </script>
