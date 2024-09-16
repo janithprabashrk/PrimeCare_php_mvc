@@ -17,6 +17,7 @@
     color: var(--dark-grey-color);
 }
 
+
 .financial-table {
     width: 100%;
     border-collapse: collapse;
@@ -66,7 +67,7 @@
     padding: 5px 10px;
     border: 1px solid var(--background-color);
     border-radius: 5px;
-    font-family: 'Poppins', Arial, sans-serif;
+    font-family: "Outfit", sans-serif;
 }
 
 .filter-container {
