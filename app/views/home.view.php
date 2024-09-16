@@ -7,6 +7,7 @@
     <meta name="description" content="A sample webpage with a navigation bar and main content.">
     <title>PrimeCare</title>
     <link rel="stylesheet" href="<?= ROOT ?>/assets/css/home.css"> <!-- Link to your CSS file -->
+    <link rel="icon" href="<?= ROOT ?>/assets/images/p.png" type="image">
 </head>
 
 <body>
