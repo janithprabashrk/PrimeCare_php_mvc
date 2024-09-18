@@ -28,10 +28,12 @@ body {
     padding: 10px;
     background-color: var(--white-color);
     box-shadow: var(--box-shadow);
+    margin: 0;
 }
 
 .header-line a img {
     cursor: pointer;
+    margin-right: 60px;
 }
 
 .content-section {
@@ -50,7 +52,7 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin: 0 30px;
+    margin-left: 30px;
 }
 
 .user_view-sidemenu {
@@ -257,9 +259,13 @@ body {
     margin-bottom: 5px;
 }
 
+textarea .input-field{
+    font-family: "outfit" , sans-serif;
+}
+
 .input-field {
     width: 100%;
-    padding: 15px;
+    padding: 10px;
     margin: 10px 0;
     font-size: 14px;
     border: 1px solid var(--input-border-color);
