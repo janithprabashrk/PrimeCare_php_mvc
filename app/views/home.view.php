@@ -27,18 +27,36 @@
             </div>
         </section>
 
-        <section class="section--aboutus" id="aboutus">
-            <h2 class="section__title">About Us</h2>
-            <p class="section__description">We are a company dedicated to providing exceptional services and solutions.</p>
+        <section class="" id="aboutus">
+            <div class="section--aboutus">
+                <div class="section__title">About Us</div>
+                <div class="aboutus">                
+                    <div class="aboutus__left">
+                        <p class="aboutus__description">PrimeCare began as a small property management service and now connects property owners with renters across 35+ cities. We simplify property renting by offering complete management, rental, and maintenance solutions, ensuring a secure and profitable experience for owners while delivering a smooth process for tenants.
+                            <br><br>At PrimeCare, we focus on building trust and transparency between owners and renters. Discover how we can help you get the most out of your property.
+                        </p>
+                        <h3>
+                            Team<br>
+                            PrimeCare
+                        </h3>
+                    </div>
+                    <div class="aboutus__right">
+                        <!-- <div class="circle"></div> -->
+                        <img class="aboutus__img" src="<?= ROOT ?>/assets/images/hero.png" alt="aboutus">
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="section--service" id="service">
-            <h2 class="section__title">Our Services</h2>
-            <ul class="service-list">
-                <li class="service-list__item">Service 1</li>
-                <li class="service-list__item">Service 2</li>
-                <li class="service-list__item">Service 3</li>
-            </ul>
+        <section class="" id="service">
+            <div class="section--service">
+                <h2 class="section__title">Our Services</h2>
+                <ul class="service-list">
+                    <li class="service-list__item">Service 1</li>
+                    <li class="service-list__item">Service 2</li>
+                    <li class="service-list__item">Service 3</li>
+                </ul>
+            </div>
         </section>
 
         <section class="section--ourteam" id="ourteam">
