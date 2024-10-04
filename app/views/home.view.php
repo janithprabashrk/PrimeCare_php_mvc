@@ -52,9 +52,21 @@
             <div class="section--service">
                 <h2 class="section__title">Our Services</h2>
                 <ul class="service-list">
-                    <li class="service-list__item">Service 1</li>
-                    <li class="service-list__item">Service 2</li>
-                    <li class="service-list__item">Service 3</li>
+                    <li class="card__item">
+                        <img class="card__img" src="<?= ROOT ?>/assets/images/property.png" alt="">
+                        <h3 class="card__title">Property management</h3>
+                        <!-- <p class="card__description">Description of service 1.</p> -->
+                    </li>
+                    <li class="card__item">
+                        <img class="card__img" src="<?= ROOT ?>/assets/images/renting.png" alt="">
+                        <h3 class="card__title">Renting Services</h3>
+                        <!-- <p class="card__description">Description of service 1.</p> -->
+                    </li>
+                    <li class="card__item">
+                        <img class="card__img" src="<?= ROOT ?>/assets/images/tenant.png" alt="">
+                        <h3 class="card__title">Tenant Management</h3>
+                        <!-- <p class="card__description">Description of service 1.</p> -->
+                    </li>
                 </ul>
             </div>
         </section>
