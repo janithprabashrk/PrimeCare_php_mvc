@@ -10,7 +10,7 @@
             <li class="header__menu-item"><a class="header__link" href="#aboutus">About Us</a></li>
             <li class="header__menu-item"><a class="header__link" href="#service">Services</a></li>
             <li class="header__menu-item"><a class="header__link" href="#ourteam">Our Team</a></li>
-            <li class="header__menu-item"><a class="header__link" href="#reviews">Reviews</a></li>
+            <!-- <li class="header__menu-item"><a class="header__link" href="#reviews">Reviews</a></li> -->
             <li class="header__menu-item"><a class="header__link" href="#contact">Contact</a></li>
         </ul>
         <button class="header__button">Sign In | Log In</button> <!-- Updated to header__button -->

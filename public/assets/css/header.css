@@ -92,7 +92,7 @@
 }
 
 /* Mobile View */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 8000px) {
   .header__menu {
     position: absolute;
     top: 60px;
@@ -111,7 +111,7 @@
     transition: tranform 0.5s easy, opacity 0.5s easy;
   }
 
-  .header__menu.open {
+  .header__menu .open {
     gap: 0px;
     transform: translateY(0); /* Slide down when open */
     opacity: 1;

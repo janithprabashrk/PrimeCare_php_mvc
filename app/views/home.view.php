@@ -32,9 +32,9 @@
                 <div class="section__title">About Us</div>
                 <div class="aboutus">                
                     <div class="aboutus__left">
-                        <p class="aboutus__description">PrimeCare began as a small property management service and now connects property owners with renters across 35+ cities. We simplify property renting by offering complete management, rental, and maintenance solutions, ensuring a secure and profitable experience for owners while delivering a smooth process for tenants.
+                        <span class="aboutus__description">    PrimeCare began as a small property management service and now connects property owners with renters across 35+ cities. We simplify property renting by offering complete management, rental, and maintenance solutions, ensuring a secure and profitable experience for owners while delivering a smooth process for tenants.
                             <br><br>At PrimeCare, we focus on building trust and transparency between owners and renters. Discover how we can help you get the most out of your property.
-                        </p>
+                        </span>
                         <h3>
                             Team<br>
                             PrimeCare
@@ -71,39 +71,71 @@
             </div>
         </section>
 
-        <section class="section--ourteam" id="ourteam">
-            <h2 class="section__title">Meet Our Team</h2>
-            <div class="team-member">
-                <h3 class="team-member__name">Team Member 1</h3>
-                <p class="team-member__description">Role and description of team member 1.</p>
-            </div>
-            <div class="team-member">
-                <h3 class="team-member__name">Team Member 2</h3>
-                <p class="team-member__description">Role and description of team member 2.</p>
+        <section class="" id="ourteam">
+            <div class="section--ourteam">
+                <h2 class="section__title">Meet Our Team</h2>
+                <ul class="ourteam-list">
+                    <li class="card__item">
+                        <img class="card__img" src="<?= ROOT ?>/assets/images/agent.png" alt="">
+                        <h3 class="card__title">Bimsara Imash</h3>
+                        <!-- <p class="card__description">Description of service 1.</p> -->
+                    </li>
+                    <li class="card__item">
+                        <img class="card__img" src="<?= ROOT ?>/assets/images/agent.png" alt="">
+                        <h3 class="card__title">Janitha Prabash</h3>
+                        <!-- <p class="card__description">Description of service 1.</p> -->
+                    </li>
+                    <li class="card__item">
+                        <img class="card__img" src="<?= ROOT ?>/assets/images/agent.png" alt="">
+                        <h3 class="card__title">Nimna Pathum</h3>
+                        <!-- <p class="card__description">Description of service 1.</p> -->
+                    </li>
+                    <li class="card__item">
+                        <img class="card__img" src="<?= ROOT ?>/assets/images/agent.png" alt="">
+                        <h3 class="card__title">Wendt Edmund</h3>
+                        <!-- <p class="card__description">Description of service 1.</p> -->
+                    </li>
+                </ul>
             </div>
         </section>
 
-        <section class="section--reviews" id="reviews">
+        <!-- <section class="section--reviews" id="reviews">
             <h2 class="section__title">What Our Clients Say</h2>
             <blockquote class="review">
                 <p class="review__text">"Exceptional service and great experience!"</p>
                 <cite class="review__author">- Client Name</cite>
             </blockquote>
-        </section>
+        </section> -->
 
-        <section class="section--contact" id="contact">
-            <h2 class="section__title">Contact Us</h2>
-            <form class="contact-form" action="submit-form.php" method="post">
-                <label class="contact-form__label" for="name">Name:</label>
-                <input class="contact-form__input" type="text" id="name" name="name" required>
-
-                <label class="contact-form__label" for="email">Email:</label>
-                <input class="contact-form__input" type="email" id="email" name="email" required>
-
-                <label class="contact-form__label" for="message">Message:</label>
-                <textarea class="contact-form__textarea" id="message" name="message" rows="4"></textarea>
-            </form>
+        <section class="" id="contact">
+            <div class="section--contact">
+                <h2 class="section__title">Contact Us</h2>
+                <div class="roundedContainer">
+                    <form class="contact-form" action="submit-form.php" method="post">
+                        <span class="inputfield">
+                            <label class="contact-form__label" for="name">Name :</label>
+                            <input class="contact-form__input" type="text" id="name" name="name" required>
+                        </span>
+                        <span class="inputfield">
+                            <label class="contact-form__label" for="email">Email :</label>
+                            <input class="contact-form__input" type="email" id="email" name="email" required>
+                        </span>
+                        <span class="inputfield">
+                            <label class="contact-form__label" for="phone">Phone no :</label>
+                            <input class="contact-form__input" type="text" id="phone" name="phone" required>
+                        </span>
+                        <span class="inputfield">
+                            <label class="contact-form__label" for="message">Message :</label>
+                            <textarea class="contact-form__input" id="message" name="message" rows="4"></textarea>
+                        </span>
+                        <input type="submit" class="secondary-btn">
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 </body>
+<footer class="footer">
+© 2024 PrimeCare. All rights reserved.
+</footer>
 </html>
