@@ -17,17 +17,20 @@ class Login{
                 // $_SESSION['user'] = $result;
                 
                 show("worked");
-                // header('Location: home');
+                header('Location: home');
             }else{
                 // echo "worked";
                 // show($result['password']);
                 $this->view('login');
             }
         
-        $user = new User;
 
         // show($_POST);
         
+        }else{
+            // echo "worked";
+            // show($result['password']);
+            $this->view('login');
         }
         // $result = $user->findAll();
         // show($result + "hrll");
