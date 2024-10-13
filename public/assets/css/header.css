@@ -111,7 +111,7 @@
     transition: tranform 0.5s easy, opacity 0.5s easy;
   }
 
-  .header__menu .open {
+  .header__menu.open {
     gap: 0px;
     transform: translateY(0); /* Slide down when open */
     opacity: 1;
