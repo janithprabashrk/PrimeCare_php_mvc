@@ -24,18 +24,21 @@ class Signup {
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             // Check for existing email
+            // show($_POST);
             $arr['email'] = $_POST['email'];
             $result = $user->first($arr, []);
             if ($result && isset($result->email)) {
                 $user->errors['email'] = 'Email already exists';
-                echo "if1";
+                // show($user->errors);
+                // echo "if1";
                 $this->view('signup'); // Re-render signup view with error
                 return; // Exit if email exists
             }
 
             // Validate the form data
             if (!$user->validate($_POST)) {
-                echo "if2";
+                // show($user->errors);
+                // echo "if2";
                 $this->view('signup'); // Re-render signup view with errors
                 return; // Exit if validation fails
             }
@@ -50,17 +53,22 @@ class Signup {
                 'user_lvl' => 1,
                 'username' => $this->generateUsername($_POST['fname']), // Generate username
             ];
+            // show($arr);
 
             // Insert user data into the database
-            if ($user->insert($arr)) {
+            $res = $user->insert($arr);
+            
+            if ($res) {
                 // Redirect to home if the insertion is successful
-                echo "if3";
+                unset($arr->password);
+                $_SESSION['user'] = $arr; // Store user data in session
                 redirect('home');// Use a full URL or a path as necessary
                 exit; // Good practice to call exit after header
             } else {
                 // Handle the error case if insertion fails
                 // You can add error handling here if needed
                 $user->errors['insert'] = 'Failed to create account. Please try again.';
+                // show($user->errors);
             }
         }
 

@@ -53,6 +53,10 @@ class User {
         if (empty($data['password']) || strlen($data['password']) < 5) {
             $this->errors['password'] = 'Password should be at least 5 characters long';
         }
+        // if confirmation is correct
+        if($data['password'] != $data['confirmPassword']){
+            $this->errors['password'] = 'Passwords do not match';
+        }
 
         // Optionally validate image_URL (if needed)
         if (!empty($data['image_url']) && !filter_var($data['image_url'], FILTER_VALIDATE_URL)) {

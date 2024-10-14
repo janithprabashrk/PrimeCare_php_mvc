@@ -14,6 +14,7 @@ class Login{
             if($result && isset($result->password) && $result->password == $arr['password']){
                 // Remove the password field from the result object
                 unset($result->password);
+                $_SESSION['user'] = $result;//// Store the user data in the session
                 // show("worked");
                 header('Location: home');
             }else{
