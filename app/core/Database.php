@@ -13,7 +13,6 @@ trait Database{
     public function query($query, $data = []){
         $con = $this->connect();
         $stm = $con->prepare($query);
-
         $check = $stm->execute($data);
         if(($check)){#if the query is successful
             $result = $stm->fetchAll(PDO::FETCH_OBJ);
