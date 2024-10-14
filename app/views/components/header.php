@@ -13,7 +13,10 @@
             <!-- <li class="header__menu-item"><a class="header__link" href="#reviews">Reviews</a></li> -->
             <li class="header__menu-item"><a class="header__link" href="#contact">Contact</a></li>
         </ul>
-        <button class="header__button">Sign In | Log In</button> <!-- Updated to header__button -->
+        <button class="header__button" onClick="window.location.href = 'login'">
+            Sign In | Log In
+        </button>
+
     </nav>
     <script src="<?= ROOT ?>/assets/js/openNavbar.js"></script> <!-- Link to your JS file -->
 

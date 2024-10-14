@@ -17,6 +17,7 @@ trait Database{
         if(($check)){#if the query is successful
             $result = $stm->fetchAll(PDO::FETCH_OBJ);
             if(is_array($result) && count($result)){
+                // show($result);
                 return $result;
             }
         }

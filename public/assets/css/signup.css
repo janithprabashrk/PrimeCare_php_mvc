@@ -88,7 +88,7 @@ body {
 }
 
 .signup-form__name-fields input{
-    color: var(--background-color);
+    color: var(--black-color);
 }
 
 .signup-form__password-field {
