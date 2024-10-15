@@ -25,17 +25,17 @@
                 <input type="email" name="email" id="email" class="signup-form__input" placeholder="johndoe@gmail.com" required>
 
                 <label for="phoneNo" class="signup-form__label">Contact Number</label>
-                <input type="text" name="phoneNo" id="phoneNo" class="signup-form__input" placeholder="+9476XXXXXXXX" required>
+                <input type="text" name="contact" id="phoneNo" class="signup-form__input" placeholder="076XXXXXXX" required>
 
                 <!-- First and Last Name Fields in Flex Layout -->
                 <div class="signup-form__name-fields">
                     <div class="signup-form__name-field">
                         <label for="fname" class="signup-form__label">First Name</label>
-                        <input type="text" name="fname" id="fname" class="signup-form__input" placeholder="Anura" required>
+                        <input type="text" name="fname" id="fname" class="signup-form__input" placeholder="john" required>
                     </div>
                     <div class="signup-form__name-field">
                         <label for="lname" class="signup-form__label">Last Name</label>
-                        <input type="text" name="lname" id="lname" class="signup-form__input" placeholder="Dissanayaka" required>
+                        <input type="text" name="lname" id="lname" class="signup-form__input" placeholder="doe" required>
                     </div>
                 </div>
 

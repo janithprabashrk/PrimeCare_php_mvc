@@ -20,7 +20,7 @@
                     <p class="">Maximize your rental income with our expert property management services. Let PrimeCare handle everything from tenant satisfaction to maintenance, ensuring peace of mind for property owners...</p>
                     <!-- <p class="section__description">Your journey to success begins here.</p> -->
                 </div>
-                <button class="hero__button">
+                <button class="hero__button" onclick="window.location.href='dashboard'">
                     Continue 
                     <img class="hero__button__img" src="<?= ROOT ?>/assets/images/next1.png" alt="next">
                 </button>
