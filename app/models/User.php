@@ -11,7 +11,7 @@ class User {
         'username',
         'email',
         'contact',
-        // 'password',
+        'password',
         'image_url',
         'user_lvl',
     ];
@@ -32,9 +32,9 @@ class User {
         }
 
         // Validate username
-        if (empty($data['username']) || strlen($data['username']) < 5) {
-            $this->errors['username'] = 'Username should be at least 5 characters long';
-        }
+        // if (empty($data['username']) || strlen($data['username']) < 5) {
+        //     $this->errors['username'] = 'Username should be at least 5 characters long';
+        // }
 
         // Validate email
         if (empty($data['email']) || !filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
@@ -42,13 +42,20 @@ class User {
         }
 
         // Validate contact (phone number)
-        if (empty($data['contact']) || !preg_match('/^[0-9]{10}$/', $data['contact'])) {
+        if (empty($data['contact'])) {
+            // var_dump($data['contact']);
+            $this->errors['contact'] = 'Contact number is required';
+        } elseif (!preg_match('/^[0-9]{10}$/', trim($data['contact']))) {
             $this->errors['contact'] = 'Contact number should be 10 digits';
         }
-
-        // Validate password (e.g., minimum 8 characters)
-        if (empty($data['password']) || strlen($data['password']) < 8) {
-            $this->errors['password'] = 'Password should be at least 8 characters long';
+        
+        // Validate password (e.g., minimum 5 characters)
+        if (empty($data['password']) || strlen($data['password']) < 5) {
+            $this->errors['password'] = 'Password should be at least 5 characters long';
+        }
+        // if confirmation is correct
+        if($data['password'] != $data['confirmPassword']){
+            $this->errors['password'] = 'Passwords do not match';
         }
 
         // Optionally validate image_URL (if needed)
@@ -57,7 +64,7 @@ class User {
         }
 
         // Optionally validate user_lvl (e.g., must be an integer between 1 and 10)
-        if (empty($data['user_lvl']) || !filter_var($data['user_lvl'], FILTER_VALIDATE_INT, ["options" => ["min_range" => 1, "max_range" => 10]])) {
+        if (!empty($data['user_lvl']) && !filter_var($data['user_lvl'], FILTER_VALIDATE_INT, ["options" => ["min_range" => 1, "max_range" => 10]])) {
             $this->errors['user_lvl'] = 'User level must be an integer between 1 and 10';
         }
 

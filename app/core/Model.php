@@ -89,10 +89,8 @@ trait Model{//similar to a class but can be inherited by other classes
             }
         }
         $results = $this->query($query, $data);
-        if($results){
-            return true;
-        }
-        return false;
+        show($results);
+        return $results ? true : false ;
 
     }
 
