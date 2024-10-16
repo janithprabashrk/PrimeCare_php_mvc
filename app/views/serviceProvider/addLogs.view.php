@@ -1,3 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<?= ROOT ?>/assets/css/userview.css">
+    <link rel="stylesheet" href="<?= ROOT ?>/assets/css/manager.css">
+    <link rel="stylesheet" href="<?= ROOT ?>/assets/css/owner.css">
+    <link rel="stylesheet" href="<?= ROOT ?>/assets/css/button.css">
+    <link rel="stylesheet" href="<?= ROOT ?>/assets/css/userUpdate.css">
+    <link rel="stylesheet" href="<?= ROOT ?>/assets/css/financialReport.css">
+    <link rel="stylesheet" href="<?= ROOT ?>/assets/css/components.css">
+    <link rel="stylesheet" href="<?= ROOT ?>/assets/css/forms.css">
+    <link rel="stylesheet" href="<?= ROOT ?>/assets/css/serviceProvider.css">
+    <link rel="stylesheet" href="<?= ROOT ?>/assets/css/customer.css">
+    <link rel="icon" href="<?= ROOT ?>/assets/images/p.png" type="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>PrimeCare</title>
+</head>
+
+
+
 <div class="user_view-menu-bar">
     <img src="<?= ROOT ?>/assets/images/backButton.png" alt="< back" class="navigate-icons">
     <h2>ADD Logs</h2>
