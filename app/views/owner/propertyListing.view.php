@@ -1,3 +1,5 @@
+<?php require_once 'ownerHeader.view.php'; ?>
+
 <div class="user_view-menu-bar">
     <h2>properties</h2>
     <div class="flex-bar">
@@ -78,3 +80,5 @@
     // Initial page load
     showPage(currentPage);
 </script>
+
+<?php require_once 'ownerFooter.view.php'; ?>
