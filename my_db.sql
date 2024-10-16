@@ -80,6 +80,22 @@ ALTER TABLE `person`
   MODIFY `pid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
+-- Table for services
+
+CREATE TABLE services (
+    service_id VARCHAR(50) NOT NULL PRIMARY KEY, -- Format "#Ref" + auto increment
+    service_type VARCHAR(100) NOT NULL,
+    date DATE NOT NULL,
+    property_id VARCHAR(10) NOT NULL, -- Format "PID001"
+    property_name VARCHAR(255) NOT NULL,
+    cost_per_hour DECIMAL(10, 2) NOT NULL,
+    total_hours INT NOT NULL,
+    status ENUM('Done', 'Pending', 'Ongoing') NOT NULL,
+    service_provider_id INT NOT NULL,
+    total_cost DECIMAL(10, 2) AS (cost_per_hour * total_hours) VIRTUAL, -- Virtual column for auto-calculation
+    service_description TEXT
+);
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
