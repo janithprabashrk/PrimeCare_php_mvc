@@ -31,19 +31,19 @@
         <div class="content-section">
             <div class="user_view-sidemenu">
                 <ul>
-                    <li><a href="<?= ROOT ?>/ownerdashboard"><button class="btn">Dashboard</button></a></li>
-                    <li><a href="<?= ROOT ?>/ownerdashboard/addproperty"><button class="btn">Add Property</button></a></li>
-                    <li><a href="<?= ROOT ?>/ownerdashboard/propertylisting"><button class="btn">Property Listing</button></a></li>
-                    <li><a href="<?= ROOT ?>/ownerdashboard/maintenance"><button class="btn">Maintenance</button></a></li>
-                    <li><a href="<?= ROOT ?>/ownerdashboard/financereport"><button class="btn">Finance Report</button></a></li>
-                    <li><a href="<?= ROOT ?>/ownerdashboard/tenants"><button class="btn">Tenants</button></a></li>
-                    <li><a href="<?= ROOT ?>/ownerdashboard/profile" data-section="profile"><button class="btn">Profile</button></a></li>
+                    <li><a href="<?= ROOT ?>/ownerdashboard"><button class="btn"><img src="<?= ROOT ?>/assets/images/dashboard.png" alt="">Dashboard</button></a></li>
+                    <li><a href="<?= ROOT ?>/ownerdashboard/addproperty"><button class="btn"><img src="<?= ROOT ?>/assets/images/addproperty.png" alt="">Add Property</button></a></li>
+                    <li><a href="<?= ROOT ?>/ownerdashboard/propertylisting"><button class="btn"><img src="<?= ROOT ?>/assets/images/propertylisting.png" alt="">Property Listing</button></a></li>
+                    <li><a href="<?= ROOT ?>/ownerdashboard/maintenance"><button class="btn"><img src="<?= ROOT ?>/assets/images/maintenance.png" alt="">Maintenance</button></a></li>
+                    <li><a href="<?= ROOT ?>/ownerdashboard/financereport"><button class="btn"><img src="<?= ROOT ?>/assets/images/finance.png" alt="">Finance Report</button></a></li>
+                    <li><a href="<?= ROOT ?>/ownerdashboard/tenants"><button class="btn"><img src="<?= ROOT ?>/assets/images/tenants.png" alt="">Tenants</button></a></li>
+                    <li><a href="<?= ROOT ?>/ownerdashboard/profile" data-section="profile"><button class="btn"><img src="<?= ROOT ?>/assets/images/profile.png" alt="">Profile</button></a></li>
                 </ul>
 
                 <button id="logout-btn" class="secondary-btn" style="display: none;">Logout</button>
             </div>
 
-            <script>
+            <!-- <script>
                 document.addEventListener('DOMContentLoaded', function() {
                     const logoutBtn = document.getElementById('logout-btn');
                     const currentURL = window.location.href;
@@ -55,6 +55,38 @@
                     } else {
                         // Hide the logout button otherwise
                         logoutBtn.style.display = 'none';
+                    }
+                });
+            </script> -->
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const sidebarLinks = document.querySelectorAll('.user_view-sidemenu ul li a');
+
+                    // Loop through each sidebar link
+                    sidebarLinks.forEach(link => {
+                        const button = link.querySelector('button');
+                        const href = link.getAttribute('href');
+                        const currentURL = window.location.href;
+
+                        // Check if the current page matches the link's href
+                        if (currentURL.includes(href)) {
+                            // Add 'active' class to the button
+                            button.classList.add('active');
+                            button.classList.remove('btn');
+                        }else{
+                            // Remove 'active' class from the button
+                            button.classList.remove('active');
+                            button.classList.add('btn');
+                        }
+                    });
+
+                    const logoutBtn = document.getElementById('logout-btn');
+
+                    // Check if the current page is the profile page
+                    if (window.location.href.includes('profile')) {
+                        // Show the logout button if the current page is the profile page
+                        logoutBtn.style.display = 'block';
                     }
                 });
             </script>

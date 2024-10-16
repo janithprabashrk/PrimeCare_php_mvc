@@ -43,16 +43,32 @@
 
             <script>
                 document.addEventListener('DOMContentLoaded', function() {
+                    const sidebarLinks = document.querySelectorAll('.user_view-sidemenu ul li a');
+
+                    // Loop through each sidebar link
+                    sidebarLinks.forEach(link => {
+                        const button = link.querySelector('button');
+                        const href = link.getAttribute('href');
+                        const currentURL = window.location.href;
+
+                        // Check if the current page matches the link's href
+                        if (currentURL.includes(href)) {
+                            // Add 'active' class to the button
+                            button.classList.add('active');
+                            button.classList.remove('btn');
+                        }else{
+                            // Remove 'active' class from the button
+                            button.classList.remove('active');
+                            button.classList.add('btn');
+                        }
+                    });
+
                     const logoutBtn = document.getElementById('logout-btn');
-                    const currentURL = window.location.href;
 
                     // Check if the current page is the profile page
-                    if (currentURL.includes('profile')) {
+                    if (window.location.href.includes('profile')) {
                         // Show the logout button if the current page is the profile page
                         logoutBtn.style.display = 'block';
-                    } else {
-                        // Hide the logout button otherwise
-                        logoutBtn.style.display = 'none';
                     }
                 });
             </script>
