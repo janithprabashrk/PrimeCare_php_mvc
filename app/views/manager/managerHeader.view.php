@@ -26,26 +26,33 @@
         <div class="header-line">
             <img src="<?= ROOT ?>/assets/images/logo.png" alt="PrimeCare" class="header-logo-png">
             <button class="toggle-sidebar-btn" onclick="toggleSidebar()">☰ Menu</button>
-            <a href=""><img src="<?= ROOT ?>/assets/images/user.png" alt="Profile" class="header-profile-picture"></a>
+            <a href="<?= ROOT ?>/managerdashboard/profile"><img src="<?= ROOT ?>/assets/images/user.png" alt="Profile" class="header-profile-picture"></a>
         </div>
         <div class="content-section">
             <div class="user_view-sidemenu">
-                <!-- import the side bar menu items -->
-                <?php require_once 'owner/owner.sidebar.php'; ?>
+                <ul>
+                    <li><a href="<?= ROOT ?>/managerdashboard"><button class="btn">Dashboard</button></a></li>
+                    <li><a href="<?= ROOT ?>/managerdashboard/managementHome"><button class="btn">Managements</button></a></li>
+                    <li><a href="<?= ROOT ?>/managerdashboard/contacts"><button class="btn">Contacts</button></a></li>
+                    <li><a href="<?= ROOT ?>/managerdashboard/profile" data-section="profile"><button class="btn">Profile</button></a></li>
+                </ul>
 
-                <button class="secondary-btn">Logout</button>
+                <button id="logout-btn" class="secondary-btn" style="display: none;">Logout</button>
             </div>
-            <div class="user_view-content_section">
-                <?php require_once 'profile.view.php'; ?>
-            </div>
-        </div>
-    </div>
-    <script>
-        function toggleSidebar() {
-            var sidebar = document.getElementById('sidebar');
-            sidebar.style.display = (sidebar.style.display === 'none' || sidebar.style.display === '') ? 'flex' : 'none';
-        }
-    </script>
-</body>
 
-</html>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const logoutBtn = document.getElementById('logout-btn');
+                    const currentURL = window.location.href;
+
+                    // Check if the current page is the profile page
+                    if (currentURL.includes('profile')) {
+                        // Show the logout button if the current page is the profile page
+                        logoutBtn.style.display = 'block';
+                    } else {
+                        // Hide the logout button otherwise
+                        logoutBtn.style.display = 'none';
+                    }
+                });
+            </script>
+            <div class="user_view-content_section" id="content-section">

@@ -233,7 +233,8 @@
     box-shadow: var(--box-shadow);
     overflow: hidden;
     margin: 20px auto;
-    max-width: 1000px;
+    /* max-width: 1000px; */
+    width: 90%;
 }
 
 .tenant-card-left {
