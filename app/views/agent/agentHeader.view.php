@@ -24,7 +24,7 @@
 <body>
     <div class="user_view-container">
         <div class="header-line">
-            <img src="<?= ROOT ?>/assets/images/logo.png" alt="PrimeCare" class="header-logo-png">
+            <a href="<?= ROOT ?>/home"><img src="<?= ROOT ?>/assets/images/logo.png" alt="PrimeCare" class="header-logo-png"></a>
             <button class="toggle-sidebar-btn" onclick="toggleSidebar()">☰ Menu</button>
             <a href="<?= ROOT ?>/agentdashboard/profile"><img src="<?= ROOT ?>/assets/images/user.png" alt="Profile" class="header-profile-picture"></a>
         </div>
@@ -56,7 +56,7 @@
                             // Add 'active' class to the button
                             button.classList.add('active');
                             button.classList.remove('btn');
-                        }else{
+                        } else {
                             // Remove 'active' class from the button
                             button.classList.remove('active');
                             button.classList.add('btn');
