@@ -7,6 +7,10 @@ class ServiceProviderDashboard {
         $this->view('serviceprovider/dashboard');
     }
 
+    public function dashboard() {
+        $this->view('serviceprovider/dashboard');
+    }
+
     public function profile() {
         $this->view('serviceprovider/profile');
     }

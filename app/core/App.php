@@ -23,17 +23,17 @@ class App
 
                 switch ($lvl) {
                     case 1:
-                        $this->controller = 'OwnerDashboard'; // regular user dashboard
+                        $this->controller = 'Owner'; // regular user dashboard
                         // echo "case1";
                         break;
                     case 2:
-                        $this->controller = 'ServiceProviderDashboard'; // manager dashboard
+                        $this->controller = 'ServiceProvider'; // manager dashboard
                         break;
                     case 3:
-                        $this->controller = 'AgentDashboard'; // admin dashboard
+                        $this->controller = 'Agent'; // admin dashboard
                         break;
                     case 4:
-                        $this->controller = 'ManagerDashboard'; // manager dashboard
+                        $this->controller = 'Manager'; // manager dashboard
                         break;
                     default:
                         $this->controller = '_404'; // load 404 page for unknown roles

@@ -6,7 +6,7 @@
 
 <div class="management-cards-container">
     <div class="management-card-container-sub">
-        <a href="<?= ROOT ?>/managerdashboard/assignagent">
+        <a href="<?= ROOT ?>/manager/assignagent">
             <div class="management-card">
                 <div class="management-text">
                     <h2>Assign Agents</h2>
@@ -17,7 +17,7 @@
             </div>
         </a>
 
-        <a href="<?= ROOT ?>/managerdashboard/requestapproval">
+        <a href="<?= ROOT ?>/manager/requestapproval">
             <div class="management-card">
                 <div class="management-text">
                     <h2>Approve Requests</h2>

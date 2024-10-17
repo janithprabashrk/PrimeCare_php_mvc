@@ -26,17 +26,17 @@
         <div class="header-line">
             <a href="<?= ROOT ?>/home"><img src="<?= ROOT ?>/assets/images/logo.png" alt="PrimeCare" class="header-logo-png"></a>
             <button class="toggle-sidebar-btn" onclick="toggleSidebar()">☰ Menu</button>
-            <a href="<?= ROOT ?>/customerdashboard/profile"><img src="<?= ROOT ?>/assets/images/user.png" alt="Profile" class="header-profile-picture"></a>
+            <a href="<?= ROOT ?>/customer/profile"><img src="<?= ROOT ?>/assets/images/user.png" alt="Profile" class="header-profile-picture"></a>
         </div>
         <div class="content-section">
             <div class="user_view-sidemenu">
                 <ul>
-                    <li><a href="<?= ROOT ?>/customerdashboard"><button class="btn">Dashboard</button></a></li>
-                    <li><a href="<?= ROOT ?>/customerdashboard/"><button class="btn">Occupied Properties</button></a></li>
-                    <li><a href="<?= ROOT ?>/customerdashboard/"><button class="btn">Search</button></a></li>
-                    <li><a href="<?= ROOT ?>/customerdashboard/"><button class="btn">Maintenance Requests</button></a></li>
-                    <li><a href="<?= ROOT ?>/customerdashboard/payments"><button class="btn">Payments</button></a></li>
-                    <li><a href="<?= ROOT ?>/customerdashboard/profile" data-section="profile"><button class="btn">Profile</button></a></li>
+                    <li><a href="<?= ROOT ?>/customer/dashboard"><button class="btn">Dashboard</button></a></li>
+                    <li><a href="<?= ROOT ?>/customer/"><button class="btn">Occupied Properties</button></a></li>
+                    <li><a href="<?= ROOT ?>/customer/"><button class="btn">Search</button></a></li>
+                    <li><a href="<?= ROOT ?>/customer/"><button class="btn">Maintenance Requests</button></a></li>
+                    <li><a href="<?= ROOT ?>/customer/payments"><button class="btn">Payments</button></a></li>
+                    <li><a href="<?= ROOT ?>/customer/profile" data-section="profile"><button class="btn">Profile</button></a></li>
                 </ul>
 
                 <button id="logout-btn" class="secondary-btn" style="display: none;">Logout</button>

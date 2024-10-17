@@ -1,8 +1,12 @@
 <?php
-    class CustomerDashboard{
+    class Customer{
         use controller;
 
         public function index(){
+            $this->view('customer/dashboard');
+        }
+
+        public function dashboard(){
             $this->view('customer/dashboard');
         }
 

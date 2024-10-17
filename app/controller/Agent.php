@@ -1,6 +1,6 @@
 <?php
 
-class AgentDashboard {
+class Agent {
     use controller;
     public function index() {
         echo "Agent Dashboard";

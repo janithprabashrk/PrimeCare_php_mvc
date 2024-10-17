@@ -1,8 +1,12 @@
 <?php
-    class OwnerDashboard{
+    class Owner{
         use controller;
 
         public function index(){
+            $this->view('owner/dashboard');
+        }
+
+        public function dashboard(){
             $this->view('owner/dashboard');
         }
 

@@ -1,9 +1,13 @@
 ManagerDashboard
 <?php
 
-class ManagerDashboard {
+class Manager {
     use controller;
     public function index() {
+        $this->view('manager/dashboard');
+    }
+
+    public function dashboard() {
         $this->view('manager/dashboard');
     }
 
