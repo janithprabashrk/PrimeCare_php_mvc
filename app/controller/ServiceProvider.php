@@ -1,6 +1,7 @@
 <?php
+defined('ROOTPATH') or exit('Access denied');
 
-class ServiceProviderDashboard {
+class ServiceProvider {
     use controller;
     
     public function index() {

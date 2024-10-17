@@ -1,4 +1,6 @@
 <?php
+defined('ROOTPATH') or exit('Access denied');
+
     class Owner{
         use controller;
 
@@ -27,6 +29,11 @@
         }
 
         public function propertyListing(){
+            if(URL(2) == 'addproperty'){
+                $this->view('owner/addProperty');
+                return;
+            }
+
             $this->view('owner/propertyListing');
         }
 

@@ -26,15 +26,15 @@
         <div class="header-line">
             <a href="<?= ROOT ?>/home"><img src="<?= ROOT ?>/assets/images/logo.png" alt="PrimeCare" class="header-logo-png"></a>
             <button class="toggle-sidebar-btn" onclick="toggleSidebar()">☰ Menu</button>
-            <a href="<?= ROOT ?>/serviceprovider/profile"><img src="<?= ROOT ?>/assets/images/user.png" alt="Profile" class="header-profile-picture"></a>
+            <a href="<?= ROOT ?>/dashboard/profile"><img src="<?= ROOT ?>/assets/images/user.png" alt="Profile" class="header-profile-picture"></a>
         </div>
         <div class="content-section">
             <div class="user_view-sidemenu">
                 <ul>
-                    <li><a href="<?= ROOT ?>/serviceprovider/dashboard"><button class="btn"><img src="<?= ROOT ?>/assets/images/dashboard.png" alt="">Dashboard</button></a></li>
-                    <li><a href="<?= ROOT ?>/serviceprovider/repairlisting"><button class="btn"><img src="<?= ROOT ?>/assets/images/services.png" alt="">Services</button></a></li>
-                    <li><a href="<?= ROOT ?>/serviceprovider/addlogs"><button class="btn"><img src="<?= ROOT ?>/assets/images/logs.png" alt="">Logs</button></a></li>
-                    <li><a href="<?= ROOT ?>/serviceprovider/profile" data-section="profile"><button class="btn"><img src="<?= ROOT ?>/assets/images/profile.png" alt="">Profile</button></a></li>
+                    <li><a href="<?= ROOT ?>/dashboard"><button class="btn"><img src="<?= ROOT ?>/assets/images/dashboard.png" alt="">Dashboard</button></a></li>
+                    <li><a href="<?= ROOT ?>/dashboard/repairlisting"><button class="btn"><img src="<?= ROOT ?>/assets/images/services.png" alt="">Services</button></a></li>
+                    <li><a href="<?= ROOT ?>/dashboard/addlogs"><button class="btn"><img src="<?= ROOT ?>/assets/images/logs.png" alt="">Logs</button></a></li>
+                    <li><a href="<?= ROOT ?>/dashboard/profile" data-section="profile"><button class="btn"><img src="<?= ROOT ?>/assets/images/profile.png" alt="">Profile</button></a></li>
                 </ul>
 
                 <button id="logout-btn" class="secondary-btn" style="display: none;">Logout</button>
@@ -43,18 +43,23 @@
             <script>
                 document.addEventListener('DOMContentLoaded', function() {
                     const sidebarLinks = document.querySelectorAll('.user_view-sidemenu ul li a');
-
+                    let isTabActive = false;
+                    const currentURL = window.location.href;
+                    const url = new URL(window.location.href);  // Get the current page URL
+                    const path = url.pathname.replace(/^\/|\/$/g, '').split('/');  // Split the URL into an array
+                    const currentPage = path[3] || "dashboard";
+                    console.log(path[3]);
                     // Loop through each sidebar link
                     sidebarLinks.forEach(link => {
                         const button = link.querySelector('button');
                         const href = link.getAttribute('href');
-                        const currentURL = window.location.href;
-
+                        
                         // Check if the current page matches the link's href
                         if (currentURL.includes(href)) {
                             // Add 'active' class to the button
                             button.classList.add('active');
                             button.classList.remove('btn');
+                            isTabActive = true;  // Mark that a tab is active
                         } else {
                             // Remove 'active' class from the button
                             button.classList.remove('active');
@@ -62,14 +67,30 @@
                         }
                     });
 
+                    // If no tab is active, set the dashboard as the default active
+                    const dashboardButton = document.querySelector('a[href*="dashboard"] button');
+                    if (isTabActive && !(currentPage == "dashboard")) {
+                        // console.log(" tab is active");
+                        if (dashboardButton) {
+                            // console.log(" button available");
+                            dashboardButton.classList.add('btn');
+                            dashboardButton.classList.remove('active');
+                        }
+                    }else{
+                        // console.log(" tab is not active");
+
+                        dashboardButton.classList.add('active');
+                        dashboardButton.classList.remove('btn');
+                    }
+
                     const logoutBtn = document.getElementById('logout-btn');
 
-                    // Check if the current page is the profile page
+                    // Check if the current page is the profile page and show the logout button
                     if (window.location.href.includes('profile')) {
-                        // Show the logout button if the current page is the profile page
                         logoutBtn.style.display = 'block';
                     }
                 });
             </script>
+
 
             <div class="user_view-content_section" id="content-section">

@@ -1,7 +1,9 @@
 <?php require_once 'ownerHeader.view.php'; ?>
 
 <div class="user_view-menu-bar">
-    <img src="<?= ROOT ?>/assets/images/backButton.png" alt="< back" class="navigate-icons">
+    <a href='<?= ROOT ?>/dashboard/propertylisting'>
+        <img src="<?= ROOT ?>/assets/images/backButton.png" alt="< back" class="navigate-icons">
+    </a>
     <h2>ADD PROPERTIES</h2>
 </div>
 
