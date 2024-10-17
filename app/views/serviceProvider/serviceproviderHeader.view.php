@@ -26,15 +26,15 @@
         <div class="header-line">
             <a href="<?= ROOT ?>/home"><img src="<?= ROOT ?>/assets/images/logo.png" alt="PrimeCare" class="header-logo-png"></a>
             <button class="toggle-sidebar-btn" onclick="toggleSidebar()">☰ Menu</button>
-            <a href="<?= ROOT ?>/serviceprovider/profile"><img src="<?= ROOT ?>/assets/images/user.png" alt="Profile" class="header-profile-picture"></a>
+            <a href="<?= ROOT ?>/dashboard/profile"><img src="<?= ROOT ?>/assets/images/user.png" alt="Profile" class="header-profile-picture"></a>
         </div>
         <div class="content-section">
             <div class="user_view-sidemenu">
                 <ul>
-                    <li><a href="<?= ROOT ?>/serviceprovider/dashboard"><button class="btn"><img src="<?= ROOT ?>/assets/images/dashboard.png" alt="">Dashboard</button></a></li>
-                    <li><a href="<?= ROOT ?>/serviceprovider/repairlisting"><button class="btn"><img src="<?= ROOT ?>/assets/images/services.png" alt="">Services</button></a></li>
-                    <li><a href="<?= ROOT ?>/serviceprovider/addlogs"><button class="btn"><img src="<?= ROOT ?>/assets/images/logs.png" alt="">Logs</button></a></li>
-                    <li><a href="<?= ROOT ?>/serviceprovider/profile" data-section="profile"><button class="btn"><img src="<?= ROOT ?>/assets/images/profile.png" alt="">Profile</button></a></li>
+                    <li><a href="<?= ROOT ?>/dashboard"><button class="btn"><img src="<?= ROOT ?>/assets/images/dashboard.png" alt="">Dashboard</button></a></li>
+                    <li><a href="<?= ROOT ?>/dashboard/repairlisting"><button class="btn"><img src="<?= ROOT ?>/assets/images/services.png" alt="">Services</button></a></li>
+                    <li><a href="<?= ROOT ?>/dashboard/addlogs"><button class="btn"><img src="<?= ROOT ?>/assets/images/logs.png" alt="">Logs</button></a></li>
+                    <li><a href="<?= ROOT ?>/dashboard/profile" data-section="profile"><button class="btn"><img src="<?= ROOT ?>/assets/images/profile.png" alt="">Profile</button></a></li>
                 </ul>
 
                 <button id="logout-btn" class="secondary-btn" style="display: none;">Logout</button>

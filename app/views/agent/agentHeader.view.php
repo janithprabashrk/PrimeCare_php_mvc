@@ -31,11 +31,11 @@
         <div class="content-section">
             <div class="user_view-sidemenu">
                 <ul>
-                    <li><a href="<?= ROOT ?>/agent/dashboard"><button class="btn">Dashboard</button></a></li>
-                    <li><a href="<?= ROOT ?>/agent/"><button class="btn">Task Management</button></a></li>
-                    <li><a href="<?= ROOT ?>/agent"><button class="btn">Manage Booking</button></a></li>
-                    <li><a href="<?= ROOT ?>/agent"><button class="btn">Pre Inspection</button></a></li>
-                    <li><a href="<?= ROOT ?>/agent/profile" data-section="profile"><button class="btn">Profile</button></a></li>
+                    <li><a href="<?= ROOT ?>/dashboard"><button class="btn">Dashboard</button></a></li>
+                    <li><a href="<?= ROOT ?>/dashboard/"><button class="btn">Task Management</button></a></li>
+                    <li><a href="<?= ROOT ?>/dashboard"><button class="btn">Manage Booking</button></a></li>
+                    <li><a href="<?= ROOT ?>/dashboard"><button class="btn">Pre Inspection</button></a></li>
+                    <li><a href="<?= ROOT ?>/dashboard/profile" data-section="profile"><button class="btn">Profile</button></a></li>
                 </ul>
 
                 <button id="logout-btn" class="secondary-btn" style="display: none;">Logout</button>
