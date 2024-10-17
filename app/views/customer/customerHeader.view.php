@@ -45,6 +45,7 @@
             <script>
                 document.addEventListener('DOMContentLoaded', function() {
                     const sidebarLinks = document.querySelectorAll('.user_view-sidemenu ul li a');
+                    let isTabActive = false;
 
                     // Loop through each sidebar link
                     sidebarLinks.forEach(link => {
@@ -57,6 +58,7 @@
                             // Add 'active' class to the button
                             button.classList.add('active');
                             button.classList.remove('btn');
+                            isTabActive = true;  // Mark that a tab is active
                         } else {
                             // Remove 'active' class from the button
                             button.classList.remove('active');
@@ -64,11 +66,19 @@
                         }
                     });
 
+                    // If no tab is active, set the dashboard as the default active
+                    if (isTabActive) {
+                        const dashboardButton = document.querySelector('a[href*="dashboard"] button');
+                        if (dashboardButton) {
+                            dashboardButton.classList.add('btn');
+                            dashboardButton.classList.remove('active');
+                        }
+                    }
+
                     const logoutBtn = document.getElementById('logout-btn');
 
-                    // Check if the current page is the profile page
+                    // Check if the current page is the profile page and show the logout button
                     if (window.location.href.includes('profile')) {
-                        // Show the logout button if the current page is the profile page
                         logoutBtn.style.display = 'block';
                     }
                 });
