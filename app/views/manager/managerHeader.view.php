@@ -32,7 +32,7 @@
             <div class="user_view-sidemenu">
                 <ul>
                     <li><a href="<?= ROOT ?>/dashboard"><button class="btn"><img src="<?= ROOT ?>/assets/images/dashboard.png" alt="">Dashboard</button></a></li>
-                    <li><a href="<?= ROOT ?>/dashboard/managementHome"><button class="btn"><img src="<?= ROOT ?>/assets/images/manage.png" alt="">Managements</button></a></li>
+                    <li><a href="<?= ROOT ?>/dashboard/managementhome"><button class="btn"><img src="<?= ROOT ?>/assets/images/manage.png" alt="">Managements</button></a></li>
                     <li><a href="<?= ROOT ?>/dashboard/contacts"><button class="btn"><img src="<?= ROOT ?>/assets/images/contact.png" alt="">Contacts</button></a></li>
                     <li><a href="<?= ROOT ?>/dashboard/profile" data-section="profile"><button class="btn"><img src="<?= ROOT ?>/assets/images/profile.png" alt="">Profile</button></a></li>
                 </ul>

@@ -1,4 +1,6 @@
 <?php
+defined('ROOTPATH') or exit('Access denied');
+
 class App
 {
     private $controller = 'home';
@@ -19,11 +21,11 @@ class App
         // Prevent direct access to specific role-based controllers
         $restrictedControllers = ['Owner', 'ServiceProvider', 'Agent', 'Manager'];
 
-        // Redirect direct access to restricted controllers
-        if (in_array($requestedController, $restrictedControllers)) {
-            redirect("dashboard");
-            exit(); // Prevent further execution
-        }
+        // // Redirect direct access to restricted controllers
+        // if (in_array($requestedController, $restrictedControllers)) {
+        //     redirect("dashboard");
+        //     exit(); // Prevent further execution
+        // }
 
         // Check if user is trying to access the dashboard
         if ($requestedController === 'Dashboard' || stripos($URL[0], 'dashboard') !== false) {
