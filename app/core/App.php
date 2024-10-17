@@ -17,7 +17,7 @@ class App
         $requestedController = ucfirst($URL[0]);
 
         // Prevent direct access to specific role-based controllers
-        $restrictedControllers = ['OwnerDashboard', 'ServiceProviderDashboard', 'AgentDashboard', 'ManagerDashboard'];
+        $restrictedControllers = ['Owner', 'ServiceProvider', 'Agent', 'Manager'];
 
         // Redirect direct access to restricted controllers
         if (in_array($requestedController, $restrictedControllers)) {

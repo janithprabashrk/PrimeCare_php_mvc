@@ -53,7 +53,7 @@
                     sidebarLinks.forEach(link => {
                         const button = link.querySelector('button');
                         const href = link.getAttribute('href');
-                        
+                        console.log(href);
                         // Check if the current page matches the link's href
                         if (currentURL.includes(href)) {
                             // Add 'active' class to the button
