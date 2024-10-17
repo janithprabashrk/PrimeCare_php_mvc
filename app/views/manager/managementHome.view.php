@@ -6,7 +6,7 @@
 
 <div class="management-cards-container">
     <div class="management-card-container-sub">
-        <a href="<?= ROOT ?>/managerdashboard/employeemanagement">
+        <a href="<?= ROOT ?>/dashboard/managementhome/employeemanagement">
             <div class="management-card">
                 <div class="management-text">
                     <h2>Employee Management</h2>
@@ -17,7 +17,7 @@
             </div>
         </a>
 
-        <a href="<?= ROOT ?>/managerdashboard/propertymanagement">
+        <a href="<?= ROOT ?>/dashboard/managementhome/propertymanagement">
             <div class="management-card">
                 <div class="management-text">
                     <h2>Property Management</h2>
@@ -30,7 +30,7 @@
     </div>
 
     <div class="management-card-container-sub">
-        <a href="<?= ROOT ?>/managerdashboard/">
+        <a href="<?= ROOT ?>/dashboard/managementhome">
             <div class="management-card">
                 <div class="management-text">
                     <h2>Finance Management</h2>
@@ -41,7 +41,7 @@
             </div>
         </a>
 
-        <a href="<?= ROOT ?>/managerdashboard/agentmanagement">
+        <a href="<?= ROOT ?>/dashboard/managementhome/agentmanagement">
             <div class="management-card">
                 <div class="management-text">
                     <h2>Agent Management</h2>

@@ -1,8 +1,14 @@
 <?php
-    class OwnerDashboard{
+defined('ROOTPATH') or exit('Access denied');
+
+    class Owner{
         use controller;
 
         public function index(){
+            $this->view('owner/dashboard');
+        }
+
+        public function dashboard(){
             $this->view('owner/dashboard');
         }
 
@@ -23,6 +29,11 @@
         }
 
         public function propertyListing(){
+            if(URL(2) == 'addproperty'){
+                $this->view('owner/addProperty');
+                return;
+            }
+
             $this->view('owner/propertyListing');
         }
 

@@ -1,7 +1,7 @@
 <?php require 'serviceproviderHeader.view.php' ?>
 
 <div class="user_view-menu-bar">
-    <img src="<?= ROOT ?>/assets/images/backButton.png" alt="back" class="navigate-icons">
+    <!-- <img src="<?= ROOT ?>/assets/images/backButton.png" alt="back" class="navigate-icons"> -->
     <h2>Repairs</h2>
     <div class="flex-bar">
         <div class="search-container">

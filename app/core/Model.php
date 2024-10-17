@@ -1,4 +1,6 @@
 <?php
+defined('ROOTPATH') or exit('Access denied');
+
 trait Model{//similar to a class but can be inherited by other classes
     use Database;
 

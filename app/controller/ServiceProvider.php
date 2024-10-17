@@ -1,9 +1,14 @@
 <?php
+defined('ROOTPATH') or exit('Access denied');
 
-class ServiceProviderDashboard {
+class ServiceProvider {
     use controller;
     
     public function index() {
+        $this->view('serviceprovider/dashboard');
+    }
+
+    public function dashboard() {
         $this->view('serviceprovider/dashboard');
     }
 

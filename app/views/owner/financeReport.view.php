@@ -2,7 +2,7 @@
 <div class="user_view-menu-bar">
     <div class="flex-bar-space-between-row">
         <div class="left-content">
-            <img src="<?= ROOT ?>/assets/images/backButton.png" alt="Back" class="navigate-icons">
+            <!-- <img src="<?= ROOT ?>/assets/images/backButton.png" alt="Back" class="navigate-icons"> -->
             <div>
                 <h2>Name of Property</h2>
                 <p><span>Maintained By: </span>Agent's Name</p>

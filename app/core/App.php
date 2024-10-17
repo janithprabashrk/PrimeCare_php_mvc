@@ -1,4 +1,6 @@
 <?php
+defined('ROOTPATH') or exit('Access denied');
+
 class App
 {
     private $controller = 'home';
@@ -17,13 +19,13 @@ class App
         $requestedController = ucfirst($URL[0]);
 
         // Prevent direct access to specific role-based controllers
-        $restrictedControllers = ['OwnerDashboard', 'ServiceProviderDashboard', 'AgentDashboard', 'ManagerDashboard'];
+        $restrictedControllers = ['Owner', 'ServiceProvider', 'Agent', 'Manager'];
 
-        // Redirect direct access to restricted controllers
-        if (in_array($requestedController, $restrictedControllers)) {
-            redirect("dashboard");
-            exit(); // Prevent further execution
-        }
+        // // Redirect direct access to restricted controllers
+        // if (in_array($requestedController, $restrictedControllers)) {
+        //     redirect("dashboard");
+        //     exit(); // Prevent further execution
+        // }
 
         // Check if user is trying to access the dashboard
         if ($requestedController === 'Dashboard' || stripos($URL[0], 'dashboard') !== false) {
@@ -33,16 +35,17 @@ class App
 
                 switch ($lvl) {
                     case 1:
-                        $this->controller = 'OwnerDashboard'; // regular user dashboard
+                        $this->controller = 'Owner'; // regular user dashboard
+                        // echo "case1";
                         break;
                     case 2:
-                        $this->controller = 'ServiceProviderDashboard'; // service provider dashboard
+                        $this->controller = 'ServiceProvider'; // manager dashboard
                         break;
                     case 3:
-                        $this->controller = 'AgentDashboard'; // agent dashboard
+                        $this->controller = 'Agent'; // admin dashboard
                         break;
                     case 4:
-                        $this->controller = 'ManagerDashboard'; // manager dashboard
+                        $this->controller = 'Manager'; // manager dashboard
                         break;
                     default:
                         $this->controller = '_404'; // load 404 page for unknown roles
