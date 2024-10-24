@@ -3,10 +3,10 @@
         <h3>Approval Request 1</h3>
         <div class="input-group">
             <div class="input-group-aligned">
-                <span class="input-label-aligend"><strong>Property ID:</strong></span><span class="input-field-small">P1236</span>
+                <span class="input-label-aligend"><strong>Property ID :</strong></span><span class="input-field-small">P1236</span>
             </div>
             <div class="input-group-aligned">
-                <span class="input-label-aligend"><strong>Price(LKR):</strong></span><span class="input-field-small">200000</span>
+                <span class="input-label-aligend"><strong>Customer ID :</strong></span><span class="input-field-small">Ow001</span>
             </div>
         </div>
         <div class="input-group">
