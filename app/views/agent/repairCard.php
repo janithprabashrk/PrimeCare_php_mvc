@@ -3,10 +3,10 @@
         <h3>Repair Request 01</h3>
         <div class="detail-fields">
             <div class="detail-fields-aligned">
-                <span class="details-labels-aligend"><strong>Property ID :</strong></span><span class="details-field-small">P1236</span>
+                <span class="details-labels-aligend"><strong>Property ID:</strong></span><span class="details-field-small">P1236</span>
             </div>
             <div class="detail-fields-aligned">
-                <span class="details-labels-aligend"><strong>Customer ID :</strong></span><span class="details-field-small">Ow001</span>
+                <span class="details-labels-aligend"><strong>Customer ID:</strong></span><span class="details-field-small">Ow001</span>
             </div>
         </div>
         <div class="detail-fields">
