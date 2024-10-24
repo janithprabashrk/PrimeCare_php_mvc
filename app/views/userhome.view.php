@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="<?= ROOT ?>/assets/css/components.css">
     <link rel="stylesheet" href="<?= ROOT ?>/assets/css/forms.css">
     <link rel="stylesheet" href="<?= ROOT ?>/assets/css/serviceProvider.css">
+    <link rel="stylesheet" href="<?= ROOT ?>/assets/css/requestedTasks.css">
+    <link rel="stylesheet" href="<?= ROOT ?>/assets/css/repairCard.css">
     <link rel="stylesheet" href="<?= ROOT ?>/assets/css/customer.css">
     <link rel="icon" href="<?= ROOT ?>/assets/images/p.png" type="image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,12 +33,12 @@
         <div class="content-section">
             <div class="user_view-sidemenu">
                 <!-- import the side bar menu items -->
-                <?php require_once 'owner/owner.sidebar.php'; ?>
+                <?php require_once 'agent/agent.sidebar.php'; ?>
 
                 <button class="secondary-btn">Logout</button>
             </div>
             <div class="user_view-content_section">
-                <?php require_once 'serviceProvider/repairsRequests.view.php'; ?>
+                <?php require_once 'agent/requestedTasks.view.php'; ?>
             </div>
         </div>
     </div>
