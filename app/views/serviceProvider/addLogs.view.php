@@ -21,7 +21,7 @@
     <title>PrimeCare</title>
 </head>
 
-
+<!--ignore this part if not needed-->
 
 <div class="user_view-menu-bar">
     <img src="<?= ROOT ?>/assets/images/backButton.png" alt="< back" class="navigate-icons">
@@ -31,6 +31,15 @@
 <form method="POST" action="your_php_file.php" enctype="multipart/form-data">
     <div class="owner-addProp-container">
         <div class="owner-addProp-form-left">
+        <label class="input-label">Select Service ID</label>
+            <select name="serviceID" class="input-field" required>
+                <option value="">-- Select Service ID --</option>
+                <?php foreach ($data['serviceIDs'] as $service): ?>
+                    <option value="<?= htmlspecialchars($service['serviceID']) ?>">
+                        <?= htmlspecialchars($service['serviceID']) ?>
+                    </option>
+                <?php endforeach; ?>
+            </select>
             <label class="input-label">Repair Type</label>
             <input type="text" name="reapirType" placeholder="Type of the Repair" class="input-field" required>
 
